@@ -7,17 +7,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tips View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mortgage_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TipsViewController" customModule="Mortgage_Buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ahs-o1-f8c"/>
+                    <navigationItem key="navigationItem" id="ahs-o1-f8c">
+                        <barButtonItem key="rightBarButtonItem" title="Browser" id="RJl-6v-4ZI">
+                            <connections>
+                                <segue destination="0qZ-Zp-WxY" kind="show" id="L9i-GI-zVy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,20 +47,21 @@
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="101.78571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Browser View Controller-->
         <scene sceneID="N8M-yv-Q1h">
             <objects>
-                <viewController id="0qZ-Zp-WxY" sceneMemberID="viewController">
+                <viewController id="0qZ-Zp-WxY" customClass="BrowserViewController" customModule="Mortgage_Buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="keZ-mA-H3i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="v6r-0R-bNt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="t3f-ia-Mni"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6l-ts-Z6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="102"/>
+            <point key="canvasLocation" x="1729" y="-259"/>
         </scene>
     </scenes>
 </document>

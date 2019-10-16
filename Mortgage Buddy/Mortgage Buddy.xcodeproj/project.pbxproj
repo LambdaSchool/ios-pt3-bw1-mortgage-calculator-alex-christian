@@ -14,6 +14,7 @@
 		1F4C5B5F2356DA6D0041BF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B5E2356DA6D0041BF1B /* Assets.xcassets */; };
 		1F4C5B622356DA6D0041BF1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B602356DA6D0041BF1B /* LaunchScreen.storyboard */; };
 		93E259682356E94500A98002 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259672356E94500A98002 /* TipsViewController.swift */; };
+		93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259692356EA9300A98002 /* BrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1F4C5B612356DA6D0041BF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4C5B632356DA6D0041BF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93E259672356E94500A98002 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		93E259692356EA9300A98002 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				93E259672356E94500A98002 /* TipsViewController.swift */,
+				93E259692356EA9300A98002 /* BrowserViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				1F4C5B5A2356DA690041BF1B /* ViewController.swift in Sources */,
 				1F4C5B562356DA690041BF1B /* AppDelegate.swift in Sources */,
+				93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */,
 				93E259682356E94500A98002 /* TipsViewController.swift in Sources */,
 				1F4C5B582356DA690041BF1B /* SceneDelegate.swift in Sources */,
 			);
