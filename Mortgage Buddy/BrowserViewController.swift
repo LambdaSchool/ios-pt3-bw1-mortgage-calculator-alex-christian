@@ -22,7 +22,7 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "WebSites", style: .plain, target: self, action: #selector(openTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Home Search", style: .plain, target: self, action: #selector(openTapped))
 
         let url = URL(string: "https://www.google.com")!
         webView.load(URLRequest(url: url))
