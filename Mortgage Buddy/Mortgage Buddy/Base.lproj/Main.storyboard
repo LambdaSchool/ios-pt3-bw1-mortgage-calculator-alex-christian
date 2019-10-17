@@ -72,5 +72,32 @@
             </objects>
             <point key="canvasLocation" x="1729" y="-259"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="z8p-wy-xa3">
+            <objects>
+                <viewController id="GGo-2e-kbZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfA-p6-mb8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-Fv-zmJ" customClass="PieChart" customModule="PieCharts">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AWX-U1-PUL" firstAttribute="trailing" secondItem="mOU-Fv-zmJ" secondAttribute="trailing" id="HZJ-zc-aSU"/>
+                            <constraint firstItem="AWX-U1-PUL" firstAttribute="bottom" secondItem="mOU-Fv-zmJ" secondAttribute="bottom" id="MPc-b6-p2a"/>
+                            <constraint firstItem="mOU-Fv-zmJ" firstAttribute="top" secondItem="AWX-U1-PUL" secondAttribute="top" id="dIg-Q6-g6R"/>
+                            <constraint firstItem="mOU-Fv-zmJ" firstAttribute="leading" secondItem="AWX-U1-PUL" secondAttribute="leading" id="vu7-f6-8Bn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AWX-U1-PUL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aui-zD-5A1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2610" y="33"/>
+        </scene>
     </scenes>
 </document>
