@@ -32,30 +32,38 @@
             </objects>
             <point key="canvasLocation" x="1748" y="-768"/>
         </scene>
-        <!--View Controller-->
+        <!--Mortgage Tips-->
         <scene sceneID="7xb-bC-qLq">
             <objects>
                 <viewController id="8Tr-ra-Pal" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eBx-U5-wwT">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What's the first step to buying a house?                                                                    " id="JPI-6e-Wyo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the tips view Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBI-Sp-aQF">
-                                <rect key="frame" x="78" y="438" width="230" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="t2A-A4-8cg"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rI9-s7-pJJ"/>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <navigationItem key="navigationItem" title="Mortgage Tips" id="s7z-0e-2ZZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5y-aS-uFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3616" y="-374"/>
+            <point key="canvasLocation" x="3497" y="-374"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hRe-h6-VnZ">
+            <objects>
+                <viewController id="6Nv-2c-0CT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZx-e3-Cyk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oJu-Nd-V9Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9K-1a-otj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4259" y="-374"/>
         </scene>
         <!--Browser View Controller-->
         <scene sceneID="Tt4-9w-7EZ">
@@ -103,6 +111,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HB8-ub-2Eg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ewL-Kf-Fqt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -122,8 +131,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mDv-U6-4K1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tips" image="quote.bubble" catalog="system" id="LAH-gf-a72"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dEm-kh-gZn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="dEm-kh-gZn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
