@@ -10,7 +10,16 @@ import UIKit
 
 class MortgageCalculationsViewController: UIViewController {
     
-
+    @IBOutlet weak var homeValueTextField: UITextField!
+    @IBOutlet weak var downPaymentTextField: UITextField!
+    @IBOutlet weak var totalLoanTextField: UITextField!
+    
+    
+    @IBAction func calculateButtonTapped(_ sender: UIButton) {
+        print("calculate button tapped")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
