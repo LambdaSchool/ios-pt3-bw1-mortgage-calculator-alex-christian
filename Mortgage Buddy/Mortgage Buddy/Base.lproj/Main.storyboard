@@ -36,7 +36,7 @@
         <scene sceneID="7xb-bC-qLq">
             <objects>
                 <viewController id="8Tr-ra-Pal" sceneMemberID="viewController">
-                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What's the first step to buying a house?                                                                    " id="JPI-6e-Wyo">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="What's the first step to buying a house?                                                                    " id="JPI-6e-Wyo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -44,26 +44,35 @@
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <navigationItem key="navigationItem" title="Mortgage Tips" id="s7z-0e-2ZZ"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Mortgage Tips" id="s7z-0e-2ZZ">
+                        <barButtonItem key="rightBarButtonItem" title="Home Browser" id="prq-nN-pq3">
+                            <connections>
+                                <segue destination="6Nv-2c-0CT" kind="show" id="wgS-rI-31s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5y-aS-uFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3497" y="-374"/>
+            <point key="canvasLocation" x="3438" y="-374"/>
         </scene>
-        <!--View Controller-->
+        <!--Browser View Controller-->
         <scene sceneID="hRe-h6-VnZ">
             <objects>
-                <viewController id="6Nv-2c-0CT" sceneMemberID="viewController">
+                <viewController id="6Nv-2c-0CT" customClass="BrowserViewController" customModule="Mortgage_Buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZx-e3-Cyk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="oJu-Nd-V9Y"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8Z9-4K-xmj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9K-1a-otj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4259" y="-374"/>
+            <point key="canvasLocation" x="4312" y="-374"/>
         </scene>
         <!--Browser View Controller-->
         <scene sceneID="Tt4-9w-7EZ">
