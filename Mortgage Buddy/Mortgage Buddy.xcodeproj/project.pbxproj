@@ -15,6 +15,7 @@
 		1F4C5B5D2356DA690041BF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B5B2356DA690041BF1B /* Main.storyboard */; };
 		1F4C5B5F2356DA6D0041BF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B5E2356DA6D0041BF1B /* Assets.xcassets */; };
 		1F4C5B622356DA6D0041BF1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B602356DA6D0041BF1B /* LaunchScreen.storyboard */; };
+		1F96455E235C0DFC0063F7B3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96455D235C0DFC0063F7B3 /* File.swift */; };
 		93E259682356E94500A98002 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259672356E94500A98002 /* TipsViewController.swift */; };
 		93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259692356EA9300A98002 /* BrowserViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		1F4C5B5E2356DA6D0041BF1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F4C5B612356DA6D0041BF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4C5B632356DA6D0041BF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F96455D235C0DFC0063F7B3 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		93E259672356E94500A98002 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		93E259692356EA9300A98002 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +50,7 @@
 		1F4C5B492356DA690041BF1B = {
 			isa = PBXGroup;
 			children = (
+				1F96455D235C0DFC0063F7B3 /* File.swift */,
 				93E259662356E90E00A98002 /* Controllers */,
 				1F4C5B542356DA690041BF1B /* Mortgage Buddy */,
 				1F4C5B532356DA690041BF1B /* Products */,
@@ -163,6 +166,7 @@
 				93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */,
 				1F4417F0235BCD6800EF17E8 /* UIColor+ColorHistory.swift in Sources */,
 				93E259682356E94500A98002 /* TipsViewController.swift in Sources */,
+				1F96455E235C0DFC0063F7B3 /* File.swift in Sources */,
 				1F07F63023597F910088426E /* MortgageCalculationsViewController.swift in Sources */,
 				1F4C5B582356DA690041BF1B /* SceneDelegate.swift in Sources */,
 			);
