@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F07F63023597F910088426E /* MortgageCalculationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F07F62F23597F910088426E /* MortgageCalculationsViewController.swift */; };
+		1F4417F0235BCD6800EF17E8 /* UIColor+ColorHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4417EF235BCD6700EF17E8 /* UIColor+ColorHistory.swift */; };
 		1F4C5B562356DA690041BF1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C5B552356DA690041BF1B /* AppDelegate.swift */; };
 		1F4C5B582356DA690041BF1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C5B572356DA690041BF1B /* SceneDelegate.swift */; };
 		1F4C5B5A2356DA690041BF1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C5B592356DA690041BF1B /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		1F07F62F23597F910088426E /* MortgageCalculationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculationsViewController.swift; sourceTree = "<group>"; };
+		1F4417EF235BCD6700EF17E8 /* UIColor+ColorHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorHistory.swift"; path = "../../../../../Desktop/UIColor+ColorHistory.swift"; sourceTree = "<group>"; };
 		1F4C5B522356DA690041BF1B /* Mortgage Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mortgage Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4C5B552356DA690041BF1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F4C5B572356DA690041BF1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		1F4C5B542356DA690041BF1B /* Mortgage Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				1F4417EF235BCD6700EF17E8 /* UIColor+ColorHistory.swift */,
 				1F4C5B552356DA690041BF1B /* AppDelegate.swift */,
 				1F4C5B572356DA690041BF1B /* SceneDelegate.swift */,
 				1F4C5B592356DA690041BF1B /* ViewController.swift */,
@@ -158,6 +161,7 @@
 				1F4C5B5A2356DA690041BF1B /* ViewController.swift in Sources */,
 				1F4C5B562356DA690041BF1B /* AppDelegate.swift in Sources */,
 				93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */,
+				1F4417F0235BCD6800EF17E8 /* UIColor+ColorHistory.swift in Sources */,
 				93E259682356E94500A98002 /* TipsViewController.swift in Sources */,
 				1F07F63023597F910088426E /* MortgageCalculationsViewController.swift in Sources */,
 				1F4C5B582356DA690041BF1B /* SceneDelegate.swift in Sources */,
