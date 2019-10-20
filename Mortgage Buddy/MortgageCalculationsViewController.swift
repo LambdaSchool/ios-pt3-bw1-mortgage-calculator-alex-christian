@@ -13,6 +13,9 @@ class MortgageCalculationsViewController: UIViewController {
     @IBOutlet weak var homeValueTextField: UITextField!
     @IBOutlet weak var downPaymentTextField: UITextField!
     @IBOutlet weak var totalLoanTextField: UITextField!
+    @IBOutlet weak var homeValueLabel: UILabel!
+    @IBOutlet weak var downPaymentLabel: UILabel!
+    @IBOutlet weak var loanAmountLabel: UILabel!
     
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
@@ -22,6 +25,7 @@ class MortgageCalculationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        homeValueLabel.textColor = 
 
         // Do any additional setup after loading the view.
     }

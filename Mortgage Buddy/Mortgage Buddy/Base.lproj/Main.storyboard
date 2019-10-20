@@ -199,8 +199,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Mortgage Calculator" id="kC4-W8-xI4"/>
                     <connections>
+                        <outlet property="downPaymentLabel" destination="b2D-1c-Sba" id="CJN-PG-0ij"/>
                         <outlet property="downPaymentTextField" destination="RZO-YJ-urJ" id="Pdt-Qb-hqY"/>
+                        <outlet property="homeValueLabel" destination="b0z-Vx-RbX" id="xcf-NO-ZCd"/>
                         <outlet property="homeValueTextField" destination="ewT-1x-AWL" id="U7Q-Uu-Vlk"/>
+                        <outlet property="loanAmountLabel" destination="5mH-OE-H3y" id="zE7-By-KRK"/>
                         <outlet property="totalLoanTextField" destination="fTN-gF-rSb" id="ezd-gi-Ir5"/>
                     </connections>
                 </viewController>
