@@ -25,7 +25,7 @@ class MortgageCalculationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeValueLabel.textColor =
+        homeValueLabel.textColor = .darkBlue //just messing with how the colors work
 
         // Do any additional setup after loading the view.
     }
