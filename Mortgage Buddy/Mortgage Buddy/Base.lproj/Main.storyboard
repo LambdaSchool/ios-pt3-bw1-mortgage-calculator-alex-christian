@@ -296,7 +296,7 @@
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="quote.bubble" catalog="system" width="64" height="54"/>
         <namedColor name="Dark Color">
-            <color red="0.80491286516189575" green="0.9507211446762085" blue="0.64070010185241699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80500000715255737" green="0.95099997520446777" blue="0.64099997282028198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
