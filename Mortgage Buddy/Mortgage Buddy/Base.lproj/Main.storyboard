@@ -31,14 +31,33 @@
                     <view key="view" contentMode="scaleToFill" id="TZx-e3-Cyk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="cg3-TJ-JEm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cg3-TJ-JEm" firstAttribute="leading" secondItem="oJu-Nd-V9Y" secondAttribute="leading" id="7Px-8n-Btw"/>
+                            <constraint firstItem="cg3-TJ-JEm" firstAttribute="bottom" secondItem="oJu-Nd-V9Y" secondAttribute="bottom" id="RGz-5J-Hfu"/>
+                            <constraint firstItem="cg3-TJ-JEm" firstAttribute="trailing" secondItem="oJu-Nd-V9Y" secondAttribute="trailing" id="kyl-Gm-ulc"/>
+                            <constraint firstItem="cg3-TJ-JEm" firstAttribute="top" secondItem="oJu-Nd-V9Y" secondAttribute="top" id="tCi-a2-PDX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oJu-Nd-V9Y"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8Z9-4K-xmj"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="8Z9-4K-xmj"/>
+                    <connections>
+                        <outlet property="webKitView" destination="cg3-TJ-JEm" id="Mj0-Qp-cQc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9K-1a-otj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4312" y="-374"/>
+            <point key="canvasLocation" x="4311.594202898551" y="-374.33035714285711"/>
         </scene>
         <!--Browser View Controller-->
         <scene sceneID="Tt4-9w-7EZ">
@@ -141,7 +160,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonTapped:" destination="osj-pK-sWe" eventType="touchUpInside" id="Ghc-qm-ZdR"/>
-                                    <segue destination="9Na-rV-dgS" kind="show" id="VRJ-XJ-sOQ"/>
+                                    <segue destination="gAb-2M-GId" kind="show" id="tfA-5o-AQD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,21 +195,21 @@
             </objects>
             <point key="canvasLocation" x="2540.579710144928" y="444.64285714285711"/>
         </scene>
-        <!--Mortgage Calculations View Controller-->
-        <scene sceneID="skb-co-uki">
+        <!--View Controller-->
+        <scene sceneID="QKa-1K-m8c">
             <objects>
-                <viewController id="9Na-rV-dgS" customClass="MortgageCalculationsViewController" customModule="Mortgage_Buddy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4Bu-nv-NrU">
+                <viewController id="gAb-2M-GId" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U6e-n0-BNc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="3MZ-cb-Q4m"/>
+                        <viewLayoutGuide key="safeArea" id="31s-Oq-rBD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uZg-cX-XEb"/>
+                    <navigationItem key="navigationItem" id="lBn-Ce-idK"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dtA-rU-w8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4g3-NF-Nzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3272" y="445"/>
+            <point key="canvasLocation" x="3368" y="449"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mIS-of-6su">
@@ -219,8 +238,16 @@
                     <tabBarItem key="tabBarItem" title="Tips" image="quote.bubble" catalog="system" id="LAH-gf-a72"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="dEm-kh-gZn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="107.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="47"/>
+                            <color key="textShadowColor" white="0.244140625" alpha="0.10274537849014084" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="7"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -239,68 +266,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's the first step to buying a house?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Al-tr-Umg">
-                                <rect key="frame" x="20" y="171" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the first step to buying a house?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Al-tr-Umg">
+                                <rect key="frame" x="20" y="168" width="374" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7U7-67-PBp">
-                                <rect key="frame" x="20" y="200" width="374" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7U7-67-PBp">
+                                <rect key="frame" x="20" y="200" width="374" height="190"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="nYC-s7-ji2"/>
+                                </constraints>
                                 <string key="text">With acute shortages of homes for sale in so many markets throughout the nation, getting an preapproval for a home loan is more important than ever, since there are not too much cash buyers out there to give the sellers confidence to close the deal quickly, then a preapproval letter in your pocket will let the sellers know you’re serious about the purchase. 
 </string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What credit score is needed to buy a house?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwp-WY-Eqf">
-                                <rect key="frame" x="20" y="383" width="374" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What credit score is needed to buy a house?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwp-WY-Eqf">
+                                <rect key="frame" x="20" y="393" width="374" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qID-KL-I2N">
-                                <rect key="frame" x="20" y="442" width="374" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qID-KL-I2N">
+                                <rect key="frame" x="20" y="442" width="374" height="108"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="fre-iT-mgw"/>
+                                </constraints>
                                 <string key="text">A credit score of 620 is typically the minimum that mortgage lenders are looking for, though some lenders will go as low as 580 or below with some conditions applied. 
 </string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much can I afford?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyQ-FX-uLi">
-                                <rect key="frame" x="20" y="529" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much can I afford?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyQ-FX-uLi">
+                                <rect key="frame" x="20" y="553" width="374" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aLU-N4-4Hg">
-                                <rect key="frame" x="20" y="558" width="374" height="178"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">So instead of using the debt-to-income ratios, you can use a simpler way to calculate how much you could afford. So, if you and your spouse have a combined annual income of $110,000, then most likely your price range will be $330,000, but if you want more accurate numbers, then you should talk to a lender. 
-
-For more information about your future monthly payments, loan amount, and interest rates, please check out our Mortgage Calculator.   </string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-Fx-97e">
-                                <rect key="frame" x="108" y="744" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-Fx-97e">
+                                <rect key="frame" x="20" y="766" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <state key="normal" title="Check out New Homes Here!"/>
                                 <connections>
                                     <segue destination="6Nv-2c-0CT" kind="show" id="mKh-79-JoL"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aLU-N4-4Hg">
+                                <rect key="frame" x="20" y="580" width="374" height="178"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="jxe-Bu-LKX"/>
+                                </constraints>
+                                <string key="text">So instead of using the debt-to-income ratios, you can use a simpler way to calculate how much you could afford. So, if you and your spouse have a combined annual income of $110,000, then most likely your price range will be $330,000, but if you want more accurate numbers, then you should talk to a lender. 
+
+For more information about your future monthly payments, loan amount, and interest rates, please check out our Mortgage Calculator.   </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aLU-N4-4Hg" firstAttribute="leading" secondItem="wpa-Ce-Ccc" secondAttribute="leading" constant="20" id="0S7-Cm-5rg"/>
+                            <constraint firstItem="dwp-WY-Eqf" firstAttribute="top" secondItem="7U7-67-PBp" secondAttribute="bottom" constant="3" id="Hua-Zi-J9V"/>
+                            <constraint firstItem="9Wd-Fx-97e" firstAttribute="leading" secondItem="wpa-Ce-Ccc" secondAttribute="leading" constant="20" id="K1p-3S-ocN"/>
+                            <constraint firstItem="7U7-67-PBp" firstAttribute="top" secondItem="7Al-tr-Umg" secondAttribute="bottom" constant="8" id="LTF-AU-QQF"/>
+                            <constraint firstItem="9Wd-Fx-97e" firstAttribute="top" secondItem="aLU-N4-4Hg" secondAttribute="bottom" constant="8" id="P71-iz-8Ro"/>
+                            <constraint firstItem="wpa-Ce-Ccc" firstAttribute="trailing" secondItem="qID-KL-I2N" secondAttribute="trailing" constant="20" id="PA6-eH-zux"/>
+                            <constraint firstItem="wpa-Ce-Ccc" firstAttribute="trailing" secondItem="7U7-67-PBp" secondAttribute="trailing" constant="20" id="POM-Jm-bfw"/>
+                            <constraint firstItem="7Al-tr-Umg" firstAttribute="leading" secondItem="wpa-Ce-Ccc" secondAttribute="leading" constant="20" id="Pch-1o-3ND"/>
+                            <constraint firstItem="wpa-Ce-Ccc" firstAttribute="trailing" secondItem="9Wd-Fx-97e" secondAttribute="trailing" constant="20" id="PjS-1V-f3g"/>
+                            <constraint firstItem="wpa-Ce-Ccc" firstAttribute="trailing" secondItem="7Al-tr-Umg" secondAttribute="trailing" constant="20" id="Ust-PX-Yq5"/>
+                            <constraint firstItem="wpa-Ce-Ccc" firstAttribute="trailing" secondItem="HyQ-FX-uLi" secondAttribute="trailing" constant="20" id="Uy4-oW-9L2"/>
+                            <constraint firstItem="wpa-Ce-Ccc" firstAttribute="trailing" secondItem="aLU-N4-4Hg" secondAttribute="trailing" constant="20" id="WiG-j8-UfX"/>
+                            <constraint firstItem="HyQ-FX-uLi" firstAttribute="leading" secondItem="wpa-Ce-Ccc" secondAttribute="leading" constant="20" id="X08-v1-xpQ"/>
+                            <constraint firstItem="aLU-N4-4Hg" firstAttribute="top" secondItem="HyQ-FX-uLi" secondAttribute="bottom" constant="3" id="ai2-iz-29B"/>
+                            <constraint firstItem="7U7-67-PBp" firstAttribute="leading" secondItem="wpa-Ce-Ccc" secondAttribute="leading" constant="20" id="hKW-hp-WuQ"/>
+                            <constraint firstItem="HyQ-FX-uLi" firstAttribute="top" secondItem="qID-KL-I2N" secondAttribute="bottom" constant="3" id="izY-xw-57F"/>
+                            <constraint firstItem="wpa-Ce-Ccc" firstAttribute="trailing" secondItem="dwp-WY-Eqf" secondAttribute="trailing" constant="20" id="k8i-FX-gah"/>
+                            <constraint firstItem="dwp-WY-Eqf" firstAttribute="leading" secondItem="wpa-Ce-Ccc" secondAttribute="leading" constant="20" id="lLM-Ym-FRH"/>
+                            <constraint firstItem="qID-KL-I2N" firstAttribute="leading" secondItem="wpa-Ce-Ccc" secondAttribute="leading" constant="20" id="p66-ok-YBH"/>
+                            <constraint firstItem="qID-KL-I2N" firstAttribute="top" secondItem="dwp-WY-Eqf" secondAttribute="bottom" constant="1" id="sOx-Ho-QfB"/>
+                            <constraint firstAttribute="bottom" secondItem="aLU-N4-4Hg" secondAttribute="bottom" constant="138" id="vSA-n7-Q97"/>
+                            <constraint firstItem="7U7-67-PBp" firstAttribute="top" secondItem="7Al-tr-Umg" secondAttribute="bottom" constant="8" id="ymb-rm-9gZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wpa-Ce-Ccc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Buying Guide" id="1Tx-aO-OM5"/>
