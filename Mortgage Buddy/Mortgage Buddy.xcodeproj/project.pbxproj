@@ -14,18 +14,6 @@
 		1F4C5B5D2356DA690041BF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B5B2356DA690041BF1B /* Main.storyboard */; };
 		1F4C5B5F2356DA6D0041BF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B5E2356DA6D0041BF1B /* Assets.xcassets */; };
 		1F4C5B622356DA6D0041BF1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B602356DA6D0041BF1B /* LaunchScreen.storyboard */; };
-		1F6FB4DA235E9C8D004FEC2C /* HouseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4D9235E9C8D004FEC2C /* HouseIcon.png */; };
-		1F6FB4DC235EB064004FEC2C /* iphoneHouseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4DB235EB064004FEC2C /* iphoneHouseIcon.png */; };
-		1F6FB4DE235EB15C004FEC2C /* AppStoreHouseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4DD235EB15B004FEC2C /* AppStoreHouseIcon.png */; };
-		1F6FB4E1235EB2F0004FEC2C /* notificationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4E0235EB2F0004FEC2C /* notificationIcon.png */; };
-		1F6FB4E3235EB41C004FEC2C /* iphoneSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4E2235EB41C004FEC2C /* iphoneSettings.png */; };
-		1F6FB4E5235EB5B7004FEC2C /* IphoneApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4E4235EB5B7004FEC2C /* IphoneApp.png */; };
-		1F6FB4E7235EB612004FEC2C /* IphoneApp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4E6235EB612004FEC2C /* IphoneApp1.png */; };
-		1F6FB4E9235EB665004FEC2C /* spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4E8235EB665004FEC2C /* spotlight.png */; };
-		1F6FB4EB235EB6B9004FEC2C /* 60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4EA235EB6B9004FEC2C /* 60x60.png */; };
-		1F6FB4ED235EB6E8004FEC2C /* 87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4EC235EB6E8004FEC2C /* 87x87.png */; };
-		1F6FB4EF235EB715004FEC2C /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4EE235EB715004FEC2C /* 80x80.png */; };
-		1F6FB4F1235EB741004FEC2C /* 180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FB4F0235EB741004FEC2C /* 180x180.png */; };
 		9318FAC6235C10130091DA54 /* UIColor+ColorHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318FAC5235C10130091DA54 /* UIColor+ColorHistory.swift */; };
 		93E259682356E94500A98002 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259672356E94500A98002 /* TipsViewController.swift */; };
 		93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259692356EA9300A98002 /* BrowserViewController.swift */; };
@@ -41,18 +29,6 @@
 		1F4C5B5E2356DA6D0041BF1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F4C5B612356DA6D0041BF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4C5B632356DA6D0041BF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F6FB4D9235E9C8D004FEC2C /* HouseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseIcon.png; sourceTree = "<group>"; };
-		1F6FB4DB235EB064004FEC2C /* iphoneHouseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphoneHouseIcon.png; sourceTree = "<group>"; };
-		1F6FB4DD235EB15B004FEC2C /* AppStoreHouseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreHouseIcon.png; sourceTree = "<group>"; };
-		1F6FB4E0235EB2F0004FEC2C /* notificationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notificationIcon.png; sourceTree = "<group>"; };
-		1F6FB4E2235EB41C004FEC2C /* iphoneSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphoneSettings.png; sourceTree = "<group>"; };
-		1F6FB4E4235EB5B7004FEC2C /* IphoneApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IphoneApp.png; sourceTree = "<group>"; };
-		1F6FB4E6235EB612004FEC2C /* IphoneApp1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IphoneApp1.png; sourceTree = "<group>"; };
-		1F6FB4E8235EB665004FEC2C /* spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight.png; sourceTree = "<group>"; };
-		1F6FB4EA235EB6B9004FEC2C /* 60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60x60.png; sourceTree = "<group>"; };
-		1F6FB4EC235EB6E8004FEC2C /* 87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87x87.png; sourceTree = "<group>"; };
-		1F6FB4EE235EB715004FEC2C /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80.png; sourceTree = "<group>"; };
-		1F6FB4F0235EB741004FEC2C /* 180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180x180.png; sourceTree = "<group>"; };
 		9318FAC5235C10130091DA54 /* UIColor+ColorHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorHistory.swift"; sourceTree = SOURCE_ROOT; };
 		93E259672356E94500A98002 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		93E259692356EA9300A98002 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
@@ -95,30 +71,10 @@
 				1F4C5B592356DA690041BF1B /* ViewController.swift */,
 				1F4C5B5B2356DA690041BF1B /* Main.storyboard */,
 				1F4C5B5E2356DA6D0041BF1B /* Assets.xcassets */,
-				1F6FB4DF235EB215004FEC2C /* Icons */,
 				1F4C5B602356DA6D0041BF1B /* LaunchScreen.storyboard */,
 				1F4C5B632356DA6D0041BF1B /* Info.plist */,
 			);
 			path = "Mortgage Buddy";
-			sourceTree = "<group>";
-		};
-		1F6FB4DF235EB215004FEC2C /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				1F6FB4D9235E9C8D004FEC2C /* HouseIcon.png */,
-				1F6FB4DB235EB064004FEC2C /* iphoneHouseIcon.png */,
-				1F6FB4DD235EB15B004FEC2C /* AppStoreHouseIcon.png */,
-				1F6FB4E0235EB2F0004FEC2C /* notificationIcon.png */,
-				1F6FB4E2235EB41C004FEC2C /* iphoneSettings.png */,
-				1F6FB4E4235EB5B7004FEC2C /* IphoneApp.png */,
-				1F6FB4E6235EB612004FEC2C /* IphoneApp1.png */,
-				1F6FB4E8235EB665004FEC2C /* spotlight.png */,
-				1F6FB4EA235EB6B9004FEC2C /* 60x60.png */,
-				1F6FB4EC235EB6E8004FEC2C /* 87x87.png */,
-				1F6FB4EE235EB715004FEC2C /* 80x80.png */,
-				1F6FB4F0235EB741004FEC2C /* 180x180.png */,
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 		93E259662356E90E00A98002 /* Controllers */ = {
@@ -190,20 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4C5B622356DA6D0041BF1B /* LaunchScreen.storyboard in Resources */,
-				1F6FB4F1235EB741004FEC2C /* 180x180.png in Resources */,
-				1F6FB4E3235EB41C004FEC2C /* iphoneSettings.png in Resources */,
-				1F6FB4EF235EB715004FEC2C /* 80x80.png in Resources */,
-				1F6FB4E7235EB612004FEC2C /* IphoneApp1.png in Resources */,
-				1F6FB4DA235E9C8D004FEC2C /* HouseIcon.png in Resources */,
-				1F6FB4E9235EB665004FEC2C /* spotlight.png in Resources */,
 				1F4C5B5F2356DA6D0041BF1B /* Assets.xcassets in Resources */,
-				1F6FB4E5235EB5B7004FEC2C /* IphoneApp.png in Resources */,
-				1F6FB4ED235EB6E8004FEC2C /* 87x87.png in Resources */,
 				1F4C5B5D2356DA690041BF1B /* Main.storyboard in Resources */,
-				1F6FB4EB235EB6B9004FEC2C /* 60x60.png in Resources */,
-				1F6FB4E1235EB2F0004FEC2C /* notificationIcon.png in Resources */,
-				1F6FB4DC235EB064004FEC2C /* iphoneHouseIcon.png in Resources */,
-				1F6FB4DE235EB15C004FEC2C /* AppStoreHouseIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
