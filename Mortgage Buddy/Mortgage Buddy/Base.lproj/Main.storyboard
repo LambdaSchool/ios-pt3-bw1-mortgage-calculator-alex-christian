@@ -16,33 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dif-VV-AVA">
-                                <rect key="frame" x="0.0" y="150" width="414" height="280.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-gW-arI">
+                                <rect key="frame" x="0.0" y="170" width="414" height="263"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="281" id="mL0-GC-bpo"/>
+                                    <constraint firstAttribute="height" constant="263" id="h2y-nK-JBi"/>
                                 </constraints>
                                 <string key="text">Home buying is not easy, that's what we are here for. Our app functions by giving you a good idea of what priced house you can comfortably afford, and also around what payments you will be making based on the information that you input into the app. So if you would, you're more than welcome to go ahead and navigate over to the tips button so you can start your house searching journey. I'll see you there.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Morgage Buddy" translatesAutoresizingMaskIntoConstraints="NO" id="3Gq-3a-hBS">
-                                <rect key="frame" x="20" y="454.5" width="374" height="211"/>
+                                <rect key="frame" x="0.0" y="479" width="414" height="237"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="3Gq-3a-hBS" secondAttribute="height" multiplier="374:211" id="ORu-eT-pPN"/>
+                                    <constraint firstAttribute="width" secondItem="3Gq-3a-hBS" secondAttribute="height" multiplier="138:79" id="JHZ-2Z-uwk"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="bottom" secondItem="FoR-3F-LQF" secondAttribute="bottom" id="Kwd-Cm-ml8"/>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="trailing" secondItem="6Ju-Zk-hzv" secondAttribute="trailingMargin" id="Mvd-ks-gff"/>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="top" secondItem="dif-VV-AVA" secondAttribute="bottom" constant="24" id="TH4-z5-GtA"/>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="leading" secondItem="6Ju-Zk-hzv" secondAttribute="leadingMargin" id="UzZ-7W-THj"/>
-                            <constraint firstItem="dif-VV-AVA" firstAttribute="top" secondItem="FoR-3F-LQF" secondAttribute="top" constant="62" id="oOw-wf-blO"/>
-                            <constraint firstItem="dif-VV-AVA" firstAttribute="centerX" secondItem="3Gq-3a-hBS" secondAttribute="centerX" id="sXc-JH-tFp"/>
-                            <constraint firstItem="dif-VV-AVA" firstAttribute="leading" secondItem="FoR-3F-LQF" secondAttribute="leading" id="zxW-hb-Niq"/>
+                            <constraint firstItem="GSf-gW-arI" firstAttribute="leading" secondItem="FoR-3F-LQF" secondAttribute="leading" id="3MF-1f-hxc"/>
+                            <constraint firstItem="GSf-gW-arI" firstAttribute="trailing" secondItem="FoR-3F-LQF" secondAttribute="trailing" id="6FG-05-xzk"/>
+                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="trailing" secondItem="FoR-3F-LQF" secondAttribute="trailing" id="Avm-8w-6K3"/>
+                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="top" secondItem="GSf-gW-arI" secondAttribute="bottom" constant="46" id="jeA-lY-eZo"/>
+                            <constraint firstItem="GSf-gW-arI" firstAttribute="top" secondItem="FoR-3F-LQF" secondAttribute="top" constant="20" id="lUi-QH-5o9"/>
+                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="leading" secondItem="FoR-3F-LQF" secondAttribute="leading" id="zsi-9A-NnG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FoR-3F-LQF"/>
                     </view>
@@ -130,8 +129,9 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH6-cn-j0m">
-                                <rect key="frame" x="20" y="473" width="374" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH6-cn-j0m">
+                                <rect key="frame" x="0.0" y="473" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -168,17 +168,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="XUY-jp-P8g" firstAttribute="top" secondItem="pkv-xc-eEQ" secondAttribute="top" constant="10.5" id="10K-HN-uEe"/>
-                            <constraint firstItem="aH6-cn-j0m" firstAttribute="top" secondItem="L8b-Nx-fm6" secondAttribute="bottom" constant="17" id="2IB-uE-Jfc"/>
                             <constraint firstItem="VSE-VG-UnY" firstAttribute="top" secondItem="29J-NT-qaf" secondAttribute="bottom" constant="17" id="51B-3Z-Ah8"/>
                             <constraint firstItem="pkv-xc-eEQ" firstAttribute="bottom" secondItem="x3T-gL-cwZ" secondAttribute="bottom" constant="92" id="6yv-Vz-Vd4"/>
                             <constraint firstItem="29J-NT-qaf" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="BAI-vY-Zvu"/>
                             <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="L8b-Nx-fm6" secondAttribute="trailing" constant="20" id="Dpu-HX-2Gc"/>
-                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="aH6-cn-j0m" secondAttribute="trailing" constant="20" id="GMf-Mj-kFB"/>
                             <constraint firstItem="L8b-Nx-fm6" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="JyR-yH-hzB"/>
                             <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="29J-NT-qaf" secondAttribute="trailing" constant="20" id="WjM-rS-ghm"/>
                             <constraint firstItem="XUY-jp-P8g" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" id="Xg2-xK-bSO"/>
                             <constraint firstItem="L8b-Nx-fm6" firstAttribute="top" secondItem="VSE-VG-UnY" secondAttribute="bottom" constant="21" id="Yaa-yr-Xwm"/>
-                            <constraint firstItem="aH6-cn-j0m" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="ZvH-OY-wr8"/>
                             <constraint firstItem="29J-NT-qaf" firstAttribute="top" secondItem="XUY-jp-P8g" secondAttribute="bottom" constant="8" id="drT-Ee-kax"/>
                             <constraint firstItem="VSE-VG-UnY" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="fB7-LP-hJO"/>
                             <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="VSE-VG-UnY" secondAttribute="trailing" constant="20" id="ide-8j-H1h"/>
@@ -286,16 +283,25 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButtonTapped:" destination="osj-pK-sWe" eventType="touchUpInside" id="Ghc-qm-ZdR"/>
-                                    <segue destination="dma-fK-qCq" kind="show" id="BnR-Zh-KTV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XD-JY-pdw">
+                                <rect key="frame" x="0.0" y="587" width="414" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="1XD-JY-pdw" firstAttribute="leading" secondItem="k18-pI-g8t" secondAttribute="leading" id="1I0-4d-D2Z"/>
                             <constraint firstItem="7fZ-xO-QWS" firstAttribute="leading" secondItem="k18-pI-g8t" secondAttribute="leading" constant="20" id="1Vy-c2-r5W"/>
+                            <constraint firstItem="1XD-JY-pdw" firstAttribute="trailing" secondItem="k18-pI-g8t" secondAttribute="trailing" id="2Sx-VO-bpx"/>
+                            <constraint firstItem="GY8-mE-gzh" firstAttribute="top" secondItem="1XD-JY-pdw" secondAttribute="bottom" constant="24" id="5bE-8I-mZm"/>
                             <constraint firstItem="7fZ-xO-QWS" firstAttribute="leading" secondItem="cc6-6c-9R9" secondAttribute="trailing" constant="-366" id="BgS-SS-Bii"/>
                             <constraint firstItem="twr-PV-sYw" firstAttribute="trailing" secondItem="7fZ-xO-QWS" secondAttribute="trailing" id="NKf-LQ-C4o"/>
                             <constraint firstItem="cc6-6c-9R9" firstAttribute="top" secondItem="twr-PV-sYw" secondAttribute="bottom" constant="8" id="Ova-Sl-ill"/>
+                            <constraint firstItem="1XD-JY-pdw" firstAttribute="top" secondItem="7fZ-xO-QWS" secondAttribute="bottom" constant="38" id="Vks-5i-Avg"/>
                             <constraint firstItem="k18-pI-g8t" firstAttribute="trailing" secondItem="GY8-mE-gzh" secondAttribute="trailing" constant="20" id="YEm-oz-GHO"/>
                             <constraint firstItem="twr-PV-sYw" firstAttribute="leading" secondItem="7fZ-xO-QWS" secondAttribute="leading" id="b9p-Mf-EJ7"/>
                             <constraint firstItem="GY8-mE-gzh" firstAttribute="leading" secondItem="k18-pI-g8t" secondAttribute="leading" constant="20" id="byt-wW-mpo"/>
@@ -309,6 +315,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Mortgage Calculator" id="kC4-W8-xI4"/>
                     <connections>
+                        <outlet property="answerLabel" destination="1XD-JY-pdw" id="eGW-um-NX8"/>
                         <outlet property="downPaymentLabel" destination="b2D-1c-Sba" id="CJN-PG-0ij"/>
                         <outlet property="downPaymentTextField" destination="RZO-YJ-urJ" id="Pdt-Qb-hqY"/>
                         <outlet property="homeValueLabel" destination="b0z-Vx-RbX" id="xcf-NO-ZCd"/>
