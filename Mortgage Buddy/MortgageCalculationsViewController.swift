@@ -9,7 +9,7 @@
 import UIKit
 
 class MortgageCalculationsViewController: UIViewController {
-    
+
     @IBOutlet weak var homeValueTextField: UITextField!
     @IBOutlet weak var downPaymentTextField: UITextField!
     @IBOutlet weak var totalLoanTextField: UITextField!
@@ -17,28 +17,44 @@ class MortgageCalculationsViewController: UIViewController {
     @IBOutlet weak var downPaymentLabel: UILabel!
     @IBOutlet weak var loanAmountLabel: UILabel!
     
+    @IBOutlet weak var answerLabel: UILabel!
+    
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         print("calculate button tapped")
+        let homeValue = NSString(string: homeValueTextField.text!).doubleValue
+        let downPayment = NSString(string: downPaymentTextField.text!).doubleValue
+        var totalLoan = NSString(string: totalLoanTextField.text!).doubleValue
+        totalLoan = homeValue - downPayment
+        answerLabel.text = ("You're monthly payment will be $\(totalLoan / 360) over a course of 30 years")
     }
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
 
-        // Do any additional setup after loading the view.
     }
     
+  
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension MortgageCalculationsViewController: UITextFieldDelegate {
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        if let text = textField.text,
+            !text.isEmpty {
+            switch textField {
+            case homeValueTextField:
+                downPaymentTextField.becomeFirstResponder()
+            case downPaymentTextField:
+                totalLoanTextField.becomeFirstResponder()
+            default:
+                textField.resignFirstResponder()
+            }
+        }
+        
+        return false
     }
-    */
-
 }
