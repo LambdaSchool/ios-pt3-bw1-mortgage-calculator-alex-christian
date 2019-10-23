@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.layer.cornerRadius = 12
+        imageView.layer.cornerRadius = 30
         imageView.layer.cornerCurve = .continuous
 
         // Do any additional setup after loading the view.

@@ -16,28 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dif-VV-AVA">
-                                <rect key="frame" x="0.0" y="102" width="414" height="491"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dif-VV-AVA">
+                                <rect key="frame" x="0.0" y="150" width="414" height="280.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="281" id="mL0-GC-bpo"/>
+                                </constraints>
                                 <string key="text">Home buying is not easy, that's what we are here for. Our app functions by giving you a good idea of what priced house you can comfortably afford, and also around what payments you will be making based on the information that you input into the app. So if you would, you're more than welcome to go ahead and navigate over to the tips button so you can start your house searching journey. I'll see you there.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Morgage Buddy" translatesAutoresizingMaskIntoConstraints="NO" id="3Gq-3a-hBS">
-                                <rect key="frame" x="0.0" y="517" width="414" height="296"/>
+                                <rect key="frame" x="20" y="454.5" width="374" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Gq-3a-hBS" secondAttribute="height" multiplier="374:211" id="ORu-eT-pPN"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="leading" secondItem="dif-VV-AVA" secondAttribute="leading" id="6Kw-Vr-hDb"/>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="trailing" secondItem="dif-VV-AVA" secondAttribute="trailing" id="Czn-Ci-vjh"/>
-                            <constraint firstItem="dif-VV-AVA" firstAttribute="top" secondItem="FoR-3F-LQF" secondAttribute="top" constant="14" id="K3q-Ar-qyQ"/>
-                            <constraint firstItem="dif-VV-AVA" firstAttribute="leading" secondItem="FoR-3F-LQF" secondAttribute="leading" id="RhC-gA-17O"/>
-                            <constraint firstItem="dif-VV-AVA" firstAttribute="trailing" secondItem="FoR-3F-LQF" secondAttribute="trailing" id="cdS-vw-qCZ"/>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="top" secondItem="FoR-3F-LQF" secondAttribute="top" constant="429" id="hAW-rs-Bdd"/>
-                            <constraint firstItem="FoR-3F-LQF" firstAttribute="bottom" secondItem="dif-VV-AVA" secondAttribute="bottom" constant="220" id="jct-IP-Jhw"/>
-                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="bottom" secondItem="FoR-3F-LQF" secondAttribute="bottom" id="voC-K3-ECQ"/>
+                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="bottom" secondItem="FoR-3F-LQF" secondAttribute="bottom" id="Kwd-Cm-ml8"/>
+                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="trailing" secondItem="6Ju-Zk-hzv" secondAttribute="trailingMargin" id="Mvd-ks-gff"/>
+                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="top" secondItem="dif-VV-AVA" secondAttribute="bottom" constant="24" id="TH4-z5-GtA"/>
+                            <constraint firstItem="3Gq-3a-hBS" firstAttribute="leading" secondItem="6Ju-Zk-hzv" secondAttribute="leadingMargin" id="UzZ-7W-THj"/>
+                            <constraint firstItem="dif-VV-AVA" firstAttribute="top" secondItem="FoR-3F-LQF" secondAttribute="top" constant="62" id="oOw-wf-blO"/>
+                            <constraint firstItem="dif-VV-AVA" firstAttribute="centerX" secondItem="3Gq-3a-hBS" secondAttribute="centerX" id="sXc-JH-tFp"/>
+                            <constraint firstItem="dif-VV-AVA" firstAttribute="leading" secondItem="FoR-3F-LQF" secondAttribute="leading" id="zxW-hb-Niq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FoR-3F-LQF"/>
                     </view>
@@ -93,14 +98,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Price Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29J-NT-qaf">
-                                <rect key="frame" x="20" y="300.5" width="374" height="17"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="VSE-VG-UnY">
-                                <rect key="frame" x="20" y="362.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="367" width="374" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaQ-Ud-Ctt">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
@@ -116,7 +115,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="L8b-Nx-fm6">
-                                <rect key="frame" x="20" y="420.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="422" width="374" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spouses Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbU-QB-yHs">
                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="34"/>
@@ -132,47 +131,60 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH6-cn-j0m">
-                                <rect key="frame" x="20" y="497.5" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="473" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-gL-cwZ">
-                                <rect key="frame" x="20" y="681" width="374" height="29"/>
+                                <rect key="frame" x="20" y="657" width="374" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Wfe-Ls-o1m"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <state key="normal" title="Calculate"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUY-jp-P8g">
-                                <rect key="frame" x="0.0" y="151" width="414" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUY-jp-P8g">
+                                <rect key="frame" x="0.0" y="162" width="414" height="142"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="U6b-8l-P7d"/>
+                                </constraints>
                                 <string key="text">So you might want to use our home calculator to be able to calculate just how much home you can afford. Super simple, just input you and your spouses incomes and let us do the heavy lifting for you.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Price Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29J-NT-qaf">
+                                <rect key="frame" x="20" y="312" width="374" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="5x8-F3-9Ke"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XUY-jp-P8g" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" id="6oC-NO-Qs7"/>
-                            <constraint firstItem="aH6-cn-j0m" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="8OQ-Hy-7ny"/>
-                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="aH6-cn-j0m" secondAttribute="trailing" constant="20" id="8rg-VK-oWJ"/>
-                            <constraint firstItem="VSE-VG-UnY" firstAttribute="top" secondItem="29J-NT-qaf" secondAttribute="bottom" constant="45" id="CIw-ns-uHY"/>
-                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="bottom" secondItem="x3T-gL-cwZ" secondAttribute="bottom" constant="103" id="D8n-ti-UTq"/>
-                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="VSE-VG-UnY" secondAttribute="trailing" constant="20" id="EFL-wx-DAh"/>
-                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="L8b-Nx-fm6" secondAttribute="trailing" constant="20" id="J64-H3-B2p"/>
-                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="x3T-gL-cwZ" secondAttribute="trailing" constant="20" id="N09-Co-vsK"/>
-                            <constraint firstItem="L8b-Nx-fm6" firstAttribute="top" secondItem="VSE-VG-UnY" secondAttribute="bottom" constant="24" id="P2g-n5-ul7"/>
-                            <constraint firstItem="x3T-gL-cwZ" firstAttribute="top" secondItem="aH6-cn-j0m" secondAttribute="bottom" constant="163" id="PG3-03-t9r"/>
-                            <constraint firstItem="L8b-Nx-fm6" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="VUX-5l-s2u"/>
-                            <constraint firstItem="XUY-jp-P8g" firstAttribute="trailing" secondItem="pkv-xc-eEQ" secondAttribute="trailing" id="arB-nz-1lf"/>
-                            <constraint firstItem="XUY-jp-P8g" firstAttribute="top" secondItem="llI-cx-WSQ" secondAttribute="topMargin" constant="-0.5" id="dSY-S4-KlH"/>
-                            <constraint firstItem="L8b-Nx-fm6" firstAttribute="top" secondItem="VSE-VG-UnY" secondAttribute="bottom" constant="24" id="e8t-JX-ztU"/>
-                            <constraint firstItem="VSE-VG-UnY" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="hBp-kK-3bf"/>
-                            <constraint firstItem="29J-NT-qaf" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="ht3-MU-dQT"/>
-                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="29J-NT-qaf" secondAttribute="trailing" constant="20" id="kfS-I1-iM7"/>
-                            <constraint firstItem="x3T-gL-cwZ" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="lsV-x1-m9l"/>
-                            <constraint firstItem="29J-NT-qaf" firstAttribute="top" secondItem="XUY-jp-P8g" secondAttribute="bottom" constant="21.5" id="m9x-56-Nrc"/>
-                            <constraint firstItem="aH6-cn-j0m" firstAttribute="top" secondItem="L8b-Nx-fm6" secondAttribute="bottom" constant="43" id="uH2-Jm-NtU"/>
+                            <constraint firstItem="XUY-jp-P8g" firstAttribute="top" secondItem="pkv-xc-eEQ" secondAttribute="top" constant="10.5" id="10K-HN-uEe"/>
+                            <constraint firstItem="aH6-cn-j0m" firstAttribute="top" secondItem="L8b-Nx-fm6" secondAttribute="bottom" constant="17" id="2IB-uE-Jfc"/>
+                            <constraint firstItem="VSE-VG-UnY" firstAttribute="top" secondItem="29J-NT-qaf" secondAttribute="bottom" constant="17" id="51B-3Z-Ah8"/>
+                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="bottom" secondItem="x3T-gL-cwZ" secondAttribute="bottom" constant="92" id="6yv-Vz-Vd4"/>
+                            <constraint firstItem="29J-NT-qaf" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="BAI-vY-Zvu"/>
+                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="L8b-Nx-fm6" secondAttribute="trailing" constant="20" id="Dpu-HX-2Gc"/>
+                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="aH6-cn-j0m" secondAttribute="trailing" constant="20" id="GMf-Mj-kFB"/>
+                            <constraint firstItem="L8b-Nx-fm6" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="JyR-yH-hzB"/>
+                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="29J-NT-qaf" secondAttribute="trailing" constant="20" id="WjM-rS-ghm"/>
+                            <constraint firstItem="XUY-jp-P8g" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" id="Xg2-xK-bSO"/>
+                            <constraint firstItem="L8b-Nx-fm6" firstAttribute="top" secondItem="VSE-VG-UnY" secondAttribute="bottom" constant="21" id="Yaa-yr-Xwm"/>
+                            <constraint firstItem="aH6-cn-j0m" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="ZvH-OY-wr8"/>
+                            <constraint firstItem="29J-NT-qaf" firstAttribute="top" secondItem="XUY-jp-P8g" secondAttribute="bottom" constant="8" id="drT-Ee-kax"/>
+                            <constraint firstItem="VSE-VG-UnY" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="fB7-LP-hJO"/>
+                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="VSE-VG-UnY" secondAttribute="trailing" constant="20" id="ide-8j-H1h"/>
+                            <constraint firstItem="x3T-gL-cwZ" firstAttribute="leading" secondItem="pkv-xc-eEQ" secondAttribute="leading" constant="20" id="oFL-k5-nCg"/>
+                            <constraint firstItem="pkv-xc-eEQ" firstAttribute="trailing" secondItem="x3T-gL-cwZ" secondAttribute="trailing" constant="20" id="qhN-Y3-dAk"/>
+                            <constraint firstItem="XUY-jp-P8g" firstAttribute="trailing" secondItem="pkv-xc-eEQ" secondAttribute="trailing" id="xAJ-WW-kfB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pkv-xc-eEQ"/>
                     </view>
@@ -196,11 +208,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twr-PV-sYw">
-                                <rect key="frame" x="20" y="206.5" width="374" height="96"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twr-PV-sYw">
+                                <rect key="frame" x="20" y="152" width="374" height="151"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="vpg-1o-3Vw"/>
+                                    <constraint firstAttribute="height" constant="151" id="uPC-sT-z2b"/>
                                 </constraints>
                                 <string key="text">Use our mortgage calculator to determine about what your mortage payments would be like based on the desired home value and other aspects described below.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -208,13 +220,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Lending Rate &amp; Payment Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-6c-9R9">
-                                <rect key="frame" x="28" y="310.5" width="358" height="20.5"/>
+                                <rect key="frame" x="28" y="311" width="358" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-xO-QWS">
-                                <rect key="frame" x="20" y="402.5" width="374" height="146"/>
+                                <rect key="frame" x="20" y="403" width="374" height="146"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="zQZ-Pt-TNT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -267,7 +279,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GY8-mE-gzh">
-                                <rect key="frame" x="20" y="674.5" width="374" height="29"/>
+                                <rect key="frame" x="20" y="675" width="374" height="29"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" name="Color-1"/>
@@ -282,15 +294,15 @@
                         <constraints>
                             <constraint firstItem="7fZ-xO-QWS" firstAttribute="leading" secondItem="k18-pI-g8t" secondAttribute="leading" constant="20" id="1Vy-c2-r5W"/>
                             <constraint firstItem="7fZ-xO-QWS" firstAttribute="leading" secondItem="cc6-6c-9R9" secondAttribute="trailing" constant="-366" id="BgS-SS-Bii"/>
-                            <constraint firstItem="twr-PV-sYw" firstAttribute="centerX" secondItem="cc6-6c-9R9" secondAttribute="centerX" id="PIH-G3-gMi"/>
+                            <constraint firstItem="twr-PV-sYw" firstAttribute="trailing" secondItem="7fZ-xO-QWS" secondAttribute="trailing" id="NKf-LQ-C4o"/>
+                            <constraint firstItem="cc6-6c-9R9" firstAttribute="top" secondItem="twr-PV-sYw" secondAttribute="bottom" constant="8" id="Ova-Sl-ill"/>
                             <constraint firstItem="k18-pI-g8t" firstAttribute="trailing" secondItem="GY8-mE-gzh" secondAttribute="trailing" constant="20" id="YEm-oz-GHO"/>
-                            <constraint firstItem="twr-PV-sYw" firstAttribute="trailing" secondItem="7fZ-xO-QWS" secondAttribute="trailing" id="ZJv-g4-ibZ"/>
+                            <constraint firstItem="twr-PV-sYw" firstAttribute="leading" secondItem="7fZ-xO-QWS" secondAttribute="leading" id="b9p-Mf-EJ7"/>
                             <constraint firstItem="GY8-mE-gzh" firstAttribute="leading" secondItem="k18-pI-g8t" secondAttribute="leading" constant="20" id="byt-wW-mpo"/>
                             <constraint firstItem="k18-pI-g8t" firstAttribute="trailing" secondItem="7fZ-xO-QWS" secondAttribute="trailing" constant="20" id="d0O-4b-Mub"/>
-                            <constraint firstItem="twr-PV-sYw" firstAttribute="top" secondItem="k18-pI-g8t" secondAttribute="top" constant="55" id="fo3-0x-N94"/>
-                            <constraint firstItem="twr-PV-sYw" firstAttribute="leading" secondItem="7fZ-xO-QWS" secondAttribute="leading" id="mmt-Em-y4U"/>
+                            <constraint firstItem="twr-PV-sYw" firstAttribute="top" secondItem="k18-pI-g8t" secondAttribute="top" constant="0.5" id="kgc-64-NJU"/>
                             <constraint firstItem="GY8-mE-gzh" firstAttribute="top" secondItem="7fZ-xO-QWS" secondAttribute="bottom" constant="126" id="muO-Xv-pwG"/>
-                            <constraint firstItem="cc6-6c-9R9" firstAttribute="top" secondItem="twr-PV-sYw" secondAttribute="bottom" constant="8" symbolic="YES" id="rvV-Vn-Pud"/>
+                            <constraint firstItem="twr-PV-sYw" firstAttribute="centerX" secondItem="cc6-6c-9R9" secondAttribute="centerX" id="oWh-Q9-RUd"/>
                             <constraint firstItem="7fZ-xO-QWS" firstAttribute="top" secondItem="cc6-6c-9R9" secondAttribute="bottom" constant="71.5" id="zWM-bH-wrG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k18-pI-g8t"/>
@@ -307,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nt8-xT-44N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3726" y="398"/>
+            <point key="canvasLocation" x="3724.6376811594205" y="397.76785714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2sW-3r-BHp">
@@ -352,13 +364,13 @@
                     <tabBarItem key="tabBarItem" title="Tips" image="quote.bubble" catalog="system" id="LAH-gf-a72"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="dEm-kh-gZn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="107.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="103.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="47"/>
+                            <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
                             <color key="textShadowColor" white="0.244140625" alpha="0.10274537849014084" colorSpace="calibratedWhite"/>
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="7"/>
                         </textAttributes>
@@ -381,7 +393,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YQ-na-R8f">
-                                <rect key="frame" x="0.0" y="68" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="720"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7U7-67-PBp">
                                         <rect key="frame" x="20" y="20" width="374" height="587"/>
@@ -664,7 +676,92 @@ Cgo
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <string key="content">We invite you to check out property prices, and visit our mortgage calculator section in order to have a better idea as to how much your monthly payment will be for your new home. Keep in mind that prices will vary as your base price and your loan and down payment amount change.</string>
+                                                <string key="content">We invite you to check out property prices, and visit our mortgage calculator section in order to have a better idea as to how much your monthly payment will be for your new home. Keep in mind that prices will vary as your base price</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <font key="NSOriginalFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=",">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" your loan">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <font key="NSOriginalFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=", ">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="and down">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <font key="NSOriginalFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="payment">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <font key="NSOriginalFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="amount">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <font key="NSOriginalFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="change.">
                                                 <attributes>
                                                     <font key="NSFont" size="16" name="Rockwell-Regular"/>
                                                     <font key="NSOriginalFont" size="16" name="Rockwell-Regular"/>
@@ -676,19 +773,6 @@ Cgo
                                             <fragment content=" ">
                                                 <attributes>
                                                     <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="16" name="Rockwell-Regular"/>
-                                                    <font key="NSOriginalFont" size="16" name="Rockwell-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
