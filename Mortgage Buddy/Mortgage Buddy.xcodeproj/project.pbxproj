@@ -15,6 +15,7 @@
 		1F4C5B5F2356DA6D0041BF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B5E2356DA6D0041BF1B /* Assets.xcassets */; };
 		1F4C5B622356DA6D0041BF1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C5B602356DA6D0041BF1B /* LaunchScreen.storyboard */; };
 		1F95AF53235FA59E002ADDB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95AF52235FA59E002ADDB0 /* HomeViewController.swift */; };
+		930F729B235FFE5B00B8A505 /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F729A235FFE5B00B8A505 /* PriceViewController.swift */; };
 		9318FAC6235C10130091DA54 /* UIColor+ColorHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318FAC5235C10130091DA54 /* UIColor+ColorHistory.swift */; };
 		93E259682356E94500A98002 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259672356E94500A98002 /* TipsViewController.swift */; };
 		93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E259692356EA9300A98002 /* BrowserViewController.swift */; };
@@ -31,6 +32,7 @@
 		1F4C5B612356DA6D0041BF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4C5B632356DA6D0041BF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F95AF52235FA59E002ADDB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		930F729A235FFE5B00B8A505 /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		9318FAC5235C10130091DA54 /* UIColor+ColorHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorHistory.swift"; sourceTree = SOURCE_ROOT; };
 		93E259672356E94500A98002 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		93E259692356EA9300A98002 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				93E259672356E94500A98002 /* TipsViewController.swift */,
 				93E259692356EA9300A98002 /* BrowserViewController.swift */,
 				1F95AF52235FA59E002ADDB0 /* HomeViewController.swift */,
+				930F729A235FFE5B00B8A505 /* PriceViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				1F4C5B5A2356DA690041BF1B /* ViewController.swift in Sources */,
 				1F4C5B562356DA690041BF1B /* AppDelegate.swift in Sources */,
+				930F729B235FFE5B00B8A505 /* PriceViewController.swift in Sources */,
 				93E2596A2356EA9300A98002 /* BrowserViewController.swift in Sources */,
 				1F95AF53235FA59E002ADDB0 /* HomeViewController.swift in Sources */,
 				9318FAC6235C10130091DA54 /* UIColor+ColorHistory.swift in Sources */,
