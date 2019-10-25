@@ -29,7 +29,7 @@ class PriceViewController: UIViewController, UITextFieldDelegate {
         var startingPrice = 0
         var newTotal = yourIncome + spouseIncome
         var homeTotal = newTotal * 3
-        affordablePrice.text = "You can afford a house for around $\(homeTotal)"
+        affordablePrice.text = "$\(homeTotal)"
 }
     
     
