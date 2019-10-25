@@ -19,9 +19,11 @@ class MortgageCalculationsViewController: UIViewController {
     
     @IBOutlet weak var answerLabel: UILabel!
     
+    @IBOutlet weak var calculateOutlet: UIButton!
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         print("calculate button tapped")
+        
         let homeValue = NSString(string: homeValueTextField.text!).doubleValue
         let downPayment = NSString(string: downPaymentTextField.text!).doubleValue
         var totalLoan = NSString(string: totalLoanTextField.text!).doubleValue
@@ -34,6 +36,8 @@ class MortgageCalculationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        calculateOutlet.layer.cornerRadius = 20
+        calculateOutlet.layer.cornerCurve = .continuous
        
 
     }
