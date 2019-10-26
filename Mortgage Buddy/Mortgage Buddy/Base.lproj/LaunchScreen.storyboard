@@ -25,17 +25,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mortgage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1e7-bR-tdM">
                                 <rect key="frame" x="114" y="310" width="186" height="47.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" name="Color-1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buddy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCu-ZU-5Md">
                                 <rect key="frame" x="146" y="556.5" width="122" height="48.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" name="Color-1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="Color"/>
+                        <color key="backgroundColor" name="Color-1"/>
                         <constraints>
                             <constraint firstItem="Cyd-2U-Pox" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="5M4-Md-dx3"/>
                             <constraint firstItem="Cyd-2U-Pox" firstAttribute="top" secondItem="1e7-bR-tdM" secondAttribute="bottom" constant="8" id="8Gg-LJ-nUc"/>
@@ -59,9 +57,6 @@
     </scenes>
     <resources>
         <image name="launchScreen" width="1024" height="1024"/>
-        <namedColor name="Color">
-            <color red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Color-1">
             <color red="0.7929999828338623" green="0.15800000727176666" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

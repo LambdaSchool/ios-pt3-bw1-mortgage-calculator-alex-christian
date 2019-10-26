@@ -102,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="151" width="414" height="766"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-Jf-uG3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUY-jp-P8g">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
@@ -145,7 +145,7 @@ Please Tap on "Calculate Home Price"</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The estimated amount you qualified for is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIe-2q-q27">
-                                                <rect key="frame" x="0.0" y="482.5" width="414" height="35"/>
+                                                <rect key="frame" x="0.0" y="342.5" width="414" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="gBS-WE-pe3"/>
                                                 </constraints>
@@ -153,17 +153,8 @@ Please Tap on "Calculate Home Price"</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbS-Mp-TCN">
-                                                <rect key="frame" x="20" y="565.5" width="374" height="31"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="31" id="KOe-zt-UII"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-gL-cwZ">
-                                                <rect key="frame" x="20" y="624.5" width="374" height="64"/>
+                                                <rect key="frame" x="20" y="623" width="374" height="64"/>
                                                 <color key="backgroundColor" name="Color-1"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="WLG-ua-qEm"/>
@@ -230,17 +221,26 @@ Please Tap on "Calculate Home Price"</string>
                                                     <constraint firstItem="Oux-QX-g4y" firstAttribute="top" secondItem="VlT-1f-NJp" secondAttribute="top" constant="46" id="44t-Vk-XeB"/>
                                                 </constraints>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbS-Mp-TCN">
+                                                <rect key="frame" x="20" y="502" width="374" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="KOe-zt-UII"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="x3T-gL-cwZ" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="2YO-lo-FYF"/>
-                                            <constraint firstItem="kbS-Mp-TCN" firstAttribute="top" secondItem="YIe-2q-q27" secondAttribute="bottom" constant="48" id="5pN-3J-4hN"/>
+                                            <constraint firstItem="kbS-Mp-TCN" firstAttribute="top" secondItem="YIe-2q-q27" secondAttribute="bottom" constant="124.5" id="5pN-3J-4hN"/>
                                             <constraint firstItem="yHE-Ky-ZXN" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="8kj-Al-nFJ"/>
                                             <constraint firstAttribute="trailing" secondItem="kbS-Mp-TCN" secondAttribute="trailing" constant="20" id="92Z-7r-bmo"/>
                                             <constraint firstItem="29J-NT-qaf" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="CCp-bg-swK"/>
                                             <constraint firstAttribute="trailing" secondItem="29J-NT-qaf" secondAttribute="trailing" constant="20" id="Cbu-oC-Vl5"/>
                                             <constraint firstItem="maK-wg-1Uv" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="G2O-ka-YYO"/>
-                                            <constraint firstAttribute="height" constant="1000" id="Kmv-I6-PPc"/>
+                                            <constraint firstAttribute="height" constant="720" id="Kmv-I6-PPc"/>
                                             <constraint firstItem="aH6-cn-j0m" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="PVK-W2-bnm"/>
                                             <constraint firstItem="YIe-2q-q27" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" id="RwK-cY-7Sw"/>
                                             <constraint firstItem="XUY-jp-P8g" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" id="SDC-vS-Y3J"/>
@@ -259,7 +259,7 @@ Please Tap on "Calculate Home Price"</string>
                                             <constraint firstAttribute="trailing" secondItem="yHE-Ky-ZXN" secondAttribute="trailing" constant="20" id="sd1-yR-kAJ"/>
                                             <constraint firstAttribute="trailing" secondItem="YIe-2q-q27" secondAttribute="trailing" id="tG8-2u-nqa"/>
                                             <constraint firstItem="aH6-cn-j0m" firstAttribute="top" secondItem="yHE-Ky-ZXN" secondAttribute="bottom" constant="8" symbolic="YES" id="ucJ-r9-BzM"/>
-                                            <constraint firstItem="x3T-gL-cwZ" firstAttribute="top" secondItem="kbS-Mp-TCN" secondAttribute="bottom" constant="28" id="xr1-up-WG9"/>
+                                            <constraint firstItem="x3T-gL-cwZ" firstAttribute="top" secondItem="kbS-Mp-TCN" secondAttribute="bottom" constant="90" id="xr1-up-WG9"/>
                                             <constraint firstItem="XUY-jp-P8g" firstAttribute="top" secondItem="dNB-Jf-uG3" secondAttribute="top" id="ztm-EH-pJd"/>
                                         </constraints>
                                     </view>
@@ -295,6 +295,7 @@ Please Tap on "Calculate Home Price"</string>
                     <connections>
                         <outlet property="affordablePrice" destination="kbS-Mp-TCN" id="uXp-j3-PPg"/>
                         <outlet property="calculateOutlet" destination="x3T-gL-cwZ" id="8lU-tY-l28"/>
+                        <outlet property="scrollView" destination="AA6-Al-7TO" id="JNH-wl-Mx0"/>
                         <outlet property="spouseIncomeTextField" destination="89l-Md-nsa" id="2Xz-Hv-CSg"/>
                         <outlet property="totalIncomeTextView" destination="aH6-cn-j0m" id="T1p-yG-jLj"/>
                         <outlet property="yourIncomeTextField" destination="Jlr-eA-a7T" id="2Ff-VU-bNZ"/>
@@ -356,7 +357,7 @@ Please Tap on "Calculate Home Price"</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="83" id="AUx-H5-oNF"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
