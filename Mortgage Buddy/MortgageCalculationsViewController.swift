@@ -54,9 +54,12 @@ class MortgageCalculationsViewController: UIViewController {
     }
        
     func hideKeyBoard() {
-           homeValueTextField.resignFirstResponder()
-           downPaymentTextField.resignFirstResponder()
-           totalLoanTextField.resignFirstResponder()
+        homeValueTextField.resignFirstResponder()
+        downPaymentTextField.resignFirstResponder()
+        totalLoanTextField.resignFirstResponder()
+        
+    
+        
            
     }
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
@@ -66,8 +69,27 @@ class MortgageCalculationsViewController: UIViewController {
         let downPayment = NSString(string: downPaymentTextField.text!).doubleValue
         var totalLoan = NSString(string: totalLoanTextField.text!).doubleValue
         totalLoan = homeValue - downPayment
-        answerLabel.text = ("You're monthly payment will be $\(totalLoan / 360) over a course of 30 years")
+        let monthlyPayment = convertDoubleToCurrency(amount: totalLoan / 360)
+        answerLabel.text = ("You're monthly payment will be \(monthlyPayment) over a course of 30 years")
+        
     }
+    
+    func convertCurrenctToDouble(input: String) -> Double? {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.locale = Locale.current
+            
+        return numberFormatter.number(from: input)?.doubleValue
+    }
+        
+    func convertDoubleToCurrency(amount: Double) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.locale = Locale.current
+            
+        return numberFormatter.string(from: NSNumber(value: amount))!
+    }
+    
 }
 
 extension MortgageCalculationsViewController: UITextFieldDelegate {
