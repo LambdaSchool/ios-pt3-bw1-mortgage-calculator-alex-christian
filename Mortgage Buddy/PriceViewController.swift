@@ -20,22 +20,38 @@ class PriceViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var affordablePrice: UILabel!
     
+    @IBOutlet weak var calculateOutlet: UIButton!
     
     @IBAction func totalIncomeTimes3(_ sender: UIButton) {
         print("You just tapped me")
-        guard let yourIncomeString = yourIncomeTextField.text, !yourIncomeString.isEmpty, let yourIncome = Double(yourIncomeString) else {return}
+        hideKeyBoard()
+        guard let yourIncomeString = yourIncomeTextField.text, !yourIncomeString.isEmpty, let yourIncome = Double(yourIncomeString) else { return }
         guard let spouseIncomeString = spouseIncomeTextField.text, !spouseIncomeString.isEmpty, let spouseIncome = Double(spouseIncomeString) else {return}
         //guard let totalIncome = totalIncomeTextView.text else {return false}
         var startingPrice = 0
         var newTotal = yourIncome + spouseIncome
         var homeTotal = newTotal * 3
         affordablePrice.text = "$\(homeTotal)"
-}
+    }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           hideKeyBoard()
+           return false
+    }
+       
+    func hideKeyBoard() {
+        yourIncomeTextField.resignFirstResponder()
+        spouseIncomeTextField.resignFirstResponder()
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        calculateOutlet.layer.cornerCurve = .continuous
+        calculateOutlet.layer.cornerRadius = 20
+        yourIncomeTextField.delegate = self
+        spouseIncomeTextField.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }

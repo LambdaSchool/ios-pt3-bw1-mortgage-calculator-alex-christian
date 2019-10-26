@@ -10,8 +10,15 @@ import UIKit
 
 class TipsViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let attributedString = textView.attributedText.mutableCopy() as! NSMutableAttributedString
+        attributedString.addAttributes([.foregroundColor: UIColor.label], range: NSRange(location: 0, length: attributedString.length))
+        
+        textView.attributedText = attributedString
 
         // Do any additional setup after loading the view.
     }

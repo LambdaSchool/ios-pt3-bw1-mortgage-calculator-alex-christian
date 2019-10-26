@@ -19,46 +19,67 @@ class MortgageCalculationsViewController: UIViewController {
     
     @IBOutlet weak var answerLabel: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var calculateOutlet: UIButton!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        calculateOutlet.layer.cornerRadius = 20
+        calculateOutlet.layer.cornerCurve = .continuous
+        
+        homeValueTextField.delegate = self
+        downPaymentTextField.delegate = self
+        totalLoanTextField.delegate = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillChange(notification: Notification) {
+        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        
+        let keyboardRectInScrollView = view.convert(keyboardRect, from: nil)
+        
+        let screenIntersection = view.bounds.height - keyboardRectInScrollView.origin.y
+        
+        var scrollViewInsets = scrollView.contentInset
+        
+        scrollViewInsets.bottom = screenIntersection
+        
+        scrollView.contentInset = scrollViewInsets
+        scrollView.scrollIndicatorInsets = scrollViewInsets
+    }
+       
+    func hideKeyBoard() {
+           homeValueTextField.resignFirstResponder()
+           downPaymentTextField.resignFirstResponder()
+           totalLoanTextField.resignFirstResponder()
+           
+    }
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         print("calculate button tapped")
-        
+        hideKeyBoard()
         let homeValue = NSString(string: homeValueTextField.text!).doubleValue
         let downPayment = NSString(string: downPaymentTextField.text!).doubleValue
         var totalLoan = NSString(string: totalLoanTextField.text!).doubleValue
         totalLoan = homeValue - downPayment
         answerLabel.text = ("You're monthly payment will be $\(totalLoan / 360) over a course of 30 years")
     }
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        calculateOutlet.layer.cornerRadius = 20
-        calculateOutlet.layer.cornerCurve = .continuous
-       
-
-    }
-    
-  
 }
 
 extension MortgageCalculationsViewController: UITextFieldDelegate {
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        if let text = textField.text,
-            !text.isEmpty {
-            switch textField {
-            case homeValueTextField:
-                downPaymentTextField.becomeFirstResponder()
-            case downPaymentTextField:
-                totalLoanTextField.becomeFirstResponder()
-            default:
-                textField.resignFirstResponder()
-            }
-        }
-        
-        return false
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           hideKeyBoard()
+           return false
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+            let textFieldFrame = scrollView.convert(textField.bounds, from: textField)
+            
+            scrollView.scrollRectToVisible(textFieldFrame, animated: true)
     }
 }
