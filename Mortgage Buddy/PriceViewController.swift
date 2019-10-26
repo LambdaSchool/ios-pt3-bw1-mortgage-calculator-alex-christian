@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PriceViewController: UIViewController {
+class PriceViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var yourIncomeTextField: UITextField!
@@ -22,7 +22,7 @@ class PriceViewController: UIViewController {
     @IBOutlet weak var affordablePrice: UILabel!
     
     @IBOutlet weak var calculateOutlet: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         calculateOutlet.layer.cornerCurve = .continuous
@@ -35,12 +35,30 @@ class PriceViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)        // Do any additional setup after loading the view.
     }
+
+    
+    func hideKeyBoard() {
+        yourIncomeTextField.resignFirstResponder()
+        spouseIncomeTextField.resignFirstResponder()
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        hideKeyBoard()
+        return false
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+    let textFieldFrame = scrollView.convert(textField.bounds, from: textField)
+    
+    scrollView.scrollRectToVisible(textFieldFrame, animated: true)
+    }
     
     @objc func keyboardWillChange(notification: Notification) {
         guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
             return
-        }
-        
+    }
+
         let keyboardRectInScrollView = view.convert(keyboardRect, from: nil)
         
         let screenIntersection = view.bounds.height - keyboardRectInScrollView.origin.y
@@ -64,77 +82,73 @@ class PriceViewController: UIViewController {
         var newTotal = yourIncome + spouseIncome
         var homeTotal = newTotal * 3
         affordablePrice.text = "$\(homeTotal)"
-    }
-    
-    
-       
-    func hideKeyBoard() {
-        yourIncomeTextField.resignFirstResponder()
-        spouseIncomeTextField.resignFirstResponder()
-    }
-    
-
-    
-    
-    
-}
-    
-extension PriceViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-           hideKeyBoard()
-           return false
         
+    }
+
+  
+     func textFieldDidEndEditing(_ textField: UITextField) {
+        print(textField.text)
+     
+         }
+         
+     
+
+
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-            
-            // Hello, Wor
-            //           ^l
-            // Hello, Worl
-            
-            guard var yourIncomeString = yourIncomeTextField.text else { return false }
-            guard var spouseIncomeString = spouseIncomeTextField.text else { return false }
-            
-            switch textField {
-            case yourIncomeTextField:
-                yourIncomeString = yourIncomeString.replacingCharacters(in: Range(range, in: yourIncomeString)!, with: string)
-            case spouseIncomeTextField:
-                spouseIncomeString = spouseIncomeString.replacingCharacters(in: Range(range, in: spouseIncomeString)!, with: string)
-            default:
-                break
-            }
-            
-            if yourIncomeString.isEmpty || spouseIncomeString.isEmpty {
-                totalIncomeTextView.text = ""
-                return true
-            }
-            
-            guard let yourIncome = Double(yourIncomeString) else {return false}
-            guard let spouseIncome = Double(spouseIncomeString) else {return false}
-            //guard let totalIncome = totalIncomeTextView.text else {return false}
-            var startingPrice = 0
-            var newTotal = yourIncome + spouseIncome
-
-            // set the label
-            totalIncomeTextView.text = "$\(newTotal)"
-
-
-            return true
-        
-            func textFieldDidBeginEditing(_ textField: UITextField) {
-                   let textFieldFrame = scrollView.convert(textField.bounds, from: textField)
-                   
-                   scrollView.scrollRectToVisible(textFieldFrame, animated: true)
-           
-            func textFieldDidEndEditing(_ textField: UITextField) {
-               print(textField.text)
-            
-                }
-                
-            }
-       
-        }
-
+    
+    // Hello, Wor
+    //           ^l
+    // Hello, Worl
+    
+    guard var yourIncomeString = yourIncomeTextField.text else { return false }
+    guard var spouseIncomeString = spouseIncomeTextField.text else { return false }
+    
+    switch textField {
+    case yourIncomeTextField:
+        yourIncomeString = yourIncomeString.replacingCharacters(in: Range(range, in: yourIncomeString)!, with: string)
+    case spouseIncomeTextField:
+        spouseIncomeString = spouseIncomeString.replacingCharacters(in: Range(range, in: spouseIncomeString)!, with: string)
+    default:
+        break
     }
     
+    if yourIncomeString.isEmpty || spouseIncomeString.isEmpty {
+        totalIncomeTextView.text = ""
+        return true
+    }
+    
+    guard let yourIncome = Double(yourIncomeString) else {return false}
+    guard let spouseIncome = Double(spouseIncomeString) else {return false}
+    //guard let totalIncome = totalIncomeTextView.text else {return false}
+    var startingPrice = 0
+    var newTotal = yourIncome + spouseIncome
+
+    // set the label
+    totalIncomeTextView.text = "$\(newTotal)"
+
+
+    return true
+        
+    }
 }
+
+
+    
+    
+    
+
+    
+
+    
+        
+    
+        
+            
+       
+        
+
+    
+    
+
 
 
