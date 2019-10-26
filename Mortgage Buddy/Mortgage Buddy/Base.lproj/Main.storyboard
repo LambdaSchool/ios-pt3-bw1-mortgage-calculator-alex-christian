@@ -23,7 +23,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dif-VV-AVA">
-                                <rect key="frame" x="20" y="150" width="374" height="391"/>
+                                <rect key="frame" x="20" y="212" width="374" height="329"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Home buying is not easy, that's what we are here for. Our app functions by giving you a good idea of what priced house you can comfortably afford, and also around what payments you will be making based on the information that you input into the app. 
 So if you would, you're more than welcome to go ahead and navigate over to the tips button so you can start your house searching journey. I'll see you there.</string>
@@ -123,16 +123,16 @@ So if you would, you're more than welcome to go ahead and navigate over to the t
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH6-cn-j0m">
-                                                <rect key="frame" x="20" y="366" width="374" height="32"/>
+                                                <rect key="frame" x="20" y="342" width="374" height="46"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="32" id="PuO-eZ-J5q"/>
+                                                    <constraint firstAttribute="height" constant="46" id="PuO-eZ-J5q"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maK-wg-1Uv">
-                                                <rect key="frame" x="20" y="406" width="374" height="48"/>
+                                                <rect key="frame" x="20" y="396" width="374" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="fNP-Jc-nto"/>
                                                 </constraints>
@@ -143,7 +143,7 @@ Please Tap on "Calculate Home Price"</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The estimated amount you qualified for is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIe-2q-q27">
-                                                <rect key="frame" x="0.0" y="342.5" width="414" height="35"/>
+                                                <rect key="frame" x="8" y="452" width="414" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="gBS-WE-pe3"/>
                                                 </constraints>
@@ -165,7 +165,7 @@ Please Tap on "Calculate Home Price"</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your total income is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHE-Ky-ZXN">
-                                                <rect key="frame" x="20" y="337" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="313" width="374" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="v8h-Uy-0zJ"/>
                                                 </constraints>
@@ -207,7 +207,7 @@ Please Tap on "Calculate Home Price"</string>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$$$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89l-Md-nsa">
                                                                 <rect key="frame" x="165.5" y="0.0" width="208.5" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                                 <connections>
                                                                     <outlet property="delegate" destination="dyt-qA-1yE" id="xs8-Lo-t1o"/>
                                                                 </connections>
@@ -220,7 +220,7 @@ Please Tap on "Calculate Home Price"</string>
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbS-Mp-TCN">
-                                                <rect key="frame" x="20" y="502" width="374" height="31"/>
+                                                <rect key="frame" x="20" y="495" width="374" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="KOe-zt-UII"/>
                                                 </constraints>
@@ -232,7 +232,7 @@ Please Tap on "Calculate Home Price"</string>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="x3T-gL-cwZ" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="2YO-lo-FYF"/>
-                                            <constraint firstItem="kbS-Mp-TCN" firstAttribute="top" secondItem="YIe-2q-q27" secondAttribute="bottom" constant="124.5" id="5pN-3J-4hN"/>
+                                            <constraint firstItem="kbS-Mp-TCN" firstAttribute="top" secondItem="YIe-2q-q27" secondAttribute="bottom" constant="8" id="5pN-3J-4hN"/>
                                             <constraint firstItem="yHE-Ky-ZXN" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="8kj-Al-nFJ"/>
                                             <constraint firstAttribute="trailing" secondItem="kbS-Mp-TCN" secondAttribute="trailing" constant="20" id="92Z-7r-bmo"/>
                                             <constraint firstItem="29J-NT-qaf" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="CCp-bg-swK"/>
@@ -240,24 +240,24 @@ Please Tap on "Calculate Home Price"</string>
                                             <constraint firstItem="maK-wg-1Uv" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="G2O-ka-YYO"/>
                                             <constraint firstAttribute="height" constant="720" id="Kmv-I6-PPc"/>
                                             <constraint firstItem="aH6-cn-j0m" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="PVK-W2-bnm"/>
-                                            <constraint firstItem="YIe-2q-q27" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" id="RwK-cY-7Sw"/>
+                                            <constraint firstItem="YIe-2q-q27" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="8" id="RwK-cY-7Sw"/>
                                             <constraint firstItem="XUY-jp-P8g" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" id="SDC-vS-Y3J"/>
                                             <constraint firstAttribute="trailing" secondItem="XUY-jp-P8g" secondAttribute="trailing" id="Th7-OS-Hjp"/>
                                             <constraint firstAttribute="trailing" secondItem="maK-wg-1Uv" secondAttribute="trailing" constant="20" id="UC3-2u-XmH"/>
                                             <constraint firstAttribute="trailing" secondItem="aH6-cn-j0m" secondAttribute="trailing" constant="20" id="WfD-3E-TXR"/>
                                             <constraint firstAttribute="trailing" secondItem="VlT-1f-NJp" secondAttribute="trailing" constant="20" id="XBf-7o-Jh2"/>
                                             <constraint firstAttribute="trailing" secondItem="x3T-gL-cwZ" secondAttribute="trailing" constant="20" id="Zdh-v5-rul"/>
-                                            <constraint firstItem="YIe-2q-q27" firstAttribute="centerY" secondItem="dNB-Jf-uG3" secondAttribute="centerY" id="ZtJ-gh-4Z3"/>
+                                            <constraint firstItem="YIe-2q-q27" firstAttribute="centerY" secondItem="dNB-Jf-uG3" secondAttribute="centerY" constant="109.5" id="ZtJ-gh-4Z3"/>
                                             <constraint firstItem="kbS-Mp-TCN" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="enj-XV-zVb"/>
                                             <constraint firstItem="VlT-1f-NJp" firstAttribute="top" secondItem="29J-NT-qaf" secondAttribute="bottom" constant="41" id="fCV-Pt-vcC"/>
                                             <constraint firstItem="maK-wg-1Uv" firstAttribute="top" secondItem="aH6-cn-j0m" secondAttribute="bottom" constant="8" id="gFf-Ft-3yr"/>
                                             <constraint firstItem="29J-NT-qaf" firstAttribute="top" secondItem="XUY-jp-P8g" secondAttribute="bottom" constant="8" id="hVe-yi-a5j"/>
                                             <constraint firstItem="VlT-1f-NJp" firstAttribute="leading" secondItem="dNB-Jf-uG3" secondAttribute="leading" constant="20" id="hsy-C5-G3K"/>
-                                            <constraint firstItem="yHE-Ky-ZXN" firstAttribute="top" secondItem="VlT-1f-NJp" secondAttribute="bottom" constant="44" id="m6Q-RG-50l"/>
+                                            <constraint firstItem="yHE-Ky-ZXN" firstAttribute="top" secondItem="VlT-1f-NJp" secondAttribute="bottom" constant="20" id="m6Q-RG-50l"/>
                                             <constraint firstAttribute="trailing" secondItem="yHE-Ky-ZXN" secondAttribute="trailing" constant="20" id="sd1-yR-kAJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="YIe-2q-q27" secondAttribute="trailing" id="tG8-2u-nqa"/>
+                                            <constraint firstAttribute="trailing" secondItem="YIe-2q-q27" secondAttribute="trailing" constant="-8" id="tG8-2u-nqa"/>
                                             <constraint firstItem="aH6-cn-j0m" firstAttribute="top" secondItem="yHE-Ky-ZXN" secondAttribute="bottom" constant="8" symbolic="YES" id="ucJ-r9-BzM"/>
-                                            <constraint firstItem="x3T-gL-cwZ" firstAttribute="top" secondItem="kbS-Mp-TCN" secondAttribute="bottom" constant="90" id="xr1-up-WG9"/>
+                                            <constraint firstItem="x3T-gL-cwZ" firstAttribute="top" secondItem="kbS-Mp-TCN" secondAttribute="bottom" constant="97" id="xr1-up-WG9"/>
                                             <constraint firstItem="XUY-jp-P8g" firstAttribute="top" secondItem="dNB-Jf-uG3" secondAttribute="top" id="ztm-EH-pJd"/>
                                         </constraints>
                                     </view>
@@ -267,7 +267,7 @@ Please Tap on "Calculate Home Price"</string>
                                     <constraint firstItem="dNB-Jf-uG3" firstAttribute="trailing" secondItem="2f8-YR-yn0" secondAttribute="trailing" id="Fqk-vc-Luc"/>
                                     <constraint firstItem="dNB-Jf-uG3" firstAttribute="leading" secondItem="2f8-YR-yn0" secondAttribute="leading" id="Pcz-QH-UyI"/>
                                     <constraint firstAttribute="trailing" secondItem="dNB-Jf-uG3" secondAttribute="trailing" id="pzE-uj-LKa"/>
-                                    <constraint firstAttribute="bottom" secondItem="dNB-Jf-uG3" secondAttribute="bottom" id="yNj-KC-N61"/>
+                                    <constraint firstAttribute="bottom" secondItem="dNB-Jf-uG3" secondAttribute="bottom" constant="45.5" id="yNj-KC-N61"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="t8J-PD-TXv"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="2f8-YR-yn0"/>
