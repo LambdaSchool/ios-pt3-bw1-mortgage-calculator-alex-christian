@@ -315,14 +315,12 @@ Please Tap on "Calculate Home Price"</string>
                                 <rect key="frame" x="0.0" y="151" width="414" height="766"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J37-3A-uhd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCE-Nx-KLc">
-                                                <rect key="frame" x="16" y="624" width="374" height="64"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCE-Nx-KLc">
+                                                <rect key="frame" x="20" y="697" width="374" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="Color-1"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="64" id="b9G-e9-7Wd"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Calculate Monthly Payments"/>
@@ -330,119 +328,98 @@ Please Tap on "Calculate Home Price"</string>
                                                     <action selector="calculateButtonTapped:" destination="7Nx-6M-NM1" eventType="touchUpInside" id="K1Y-yE-4CC"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twr-PV-sYw">
-                                                <rect key="frame" x="20" y="8" width="374" height="119"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twr-PV-sYw">
+                                                <rect key="frame" x="20" y="8" width="374" height="101"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="119" id="MpO-bJ-DD1"/>
-                                                </constraints>
                                                 <string key="text">Use our mortgage calculator to determine about what your mortage payments would be like based on the desired home value and other aspects described below.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-6c-9R9">
-                                                <rect key="frame" x="20" y="135" width="374" height="24"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="m2Z-R3-QQJ"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monthly Payment Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-6c-9R9">
+                                                <rect key="frame" x="20" y="117" width="374" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To view your estimated Monthly payments Please Tap on &quot;Calculate Monthly Payments&quot;" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-jC-Vab">
-                                                <rect key="frame" x="20" y="349" width="374" height="83"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="83" id="AUx-H5-oNF"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-CB-66M">
-                                                <rect key="frame" x="0.0" y="489" width="414" height="86"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="86" id="zmZ-LS-9xX"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-CB-66M">
+                                                <rect key="frame" x="0.0" y="648" width="414" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hci-xO-uA6">
-                                                <rect key="frame" x="20" y="189" width="374" height="152"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="AKO-RS-Uvk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0z-Vx-RbX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$$$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewT-1x-AWL">
-                                                                <rect key="frame" x="160" y="0.0" width="214" height="34"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="g4p-Fw-tmr">
-                                                        <rect key="frame" x="0.0" y="59" width="374" height="34"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-Ib-2Ps">
-                                                                <rect key="frame" x="0.0" y="8.5" width="127.5" height="17"/>
-                                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$$$" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQi-sC-dGw">
-                                                                <rect key="frame" x="160.5" y="0.0" width="213.5" height="34"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aHw-fg-rR0">
-                                                        <rect key="frame" x="0.0" y="118" width="374" height="34"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-OE-H3y">
-                                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$$$" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fTN-gF-rSb">
-                                                                <rect key="frame" x="161.5" y="0.0" width="212.5" height="34"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0z-Vx-RbX">
+                                                <rect key="frame" x="20" y="149" width="103" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$$$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewT-1x-AWL">
+                                                <rect key="frame" x="200" y="149" width="194" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Down Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-Ib-2Ps">
+                                                <rect key="frame" x="20" y="197" width="127.5" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$$$" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQi-sC-dGw">
+                                                <rect key="frame" x="200" y="189" width="194" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-OE-H3y">
+                                                <rect key="frame" x="20" y="231" width="159.5" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$$$" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fTN-gF-rSb">
+                                                <rect key="frame" x="200" y="231" width="194" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interest Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yr8-k6-9Td">
+                                                <rect key="frame" x="20" y="273" width="160" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3sc-el-4fO">
+                                                <rect key="frame" x="200" y="273" width="194" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mortgage Term" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-jC-Vab">
+                                                <rect key="frame" x="20" y="315" width="374" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Term Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HnY-QX-0dd">
+                                                <rect key="frame" x="122" y="349" width="171" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="hci-xO-uA6" firstAttribute="top" secondItem="cc6-6c-9R9" secondAttribute="bottom" constant="30" id="0rQ-ey-2HB"/>
-                                            <constraint firstItem="yCE-Nx-KLc" firstAttribute="top" secondItem="5FU-CB-66M" secondAttribute="bottom" constant="49" id="1fq-Fg-LTc"/>
-                                            <constraint firstItem="cc6-6c-9R9" firstAttribute="leading" secondItem="J37-3A-uhd" secondAttribute="leading" constant="20" id="5eB-OA-gdZ"/>
-                                            <constraint firstAttribute="height" constant="720" id="6kB-Hh-Rbh"/>
-                                            <constraint firstAttribute="trailing" secondItem="hci-xO-uA6" secondAttribute="trailing" constant="20" id="UzI-oa-QEE"/>
-                                            <constraint firstItem="5FU-CB-66M" firstAttribute="top" secondItem="kdK-jC-Vab" secondAttribute="bottom" constant="57" id="YUE-bD-coK"/>
-                                            <constraint firstItem="hci-xO-uA6" firstAttribute="leading" secondItem="J37-3A-uhd" secondAttribute="leading" constant="20" id="ZrO-Rs-kiK"/>
-                                            <constraint firstItem="kdK-jC-Vab" firstAttribute="top" secondItem="hci-xO-uA6" secondAttribute="bottom" constant="8" symbolic="YES" id="beb-22-hCz"/>
-                                            <constraint firstItem="twr-PV-sYw" firstAttribute="top" secondItem="J37-3A-uhd" secondAttribute="topMargin" id="cJj-m9-fxd"/>
-                                            <constraint firstItem="5FU-CB-66M" firstAttribute="leading" secondItem="J37-3A-uhd" secondAttribute="leading" id="iZE-wW-SyZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="kdK-jC-Vab" secondAttribute="trailing" constant="20" id="jtN-vz-t9Q"/>
-                                            <constraint firstAttribute="trailing" secondItem="5FU-CB-66M" secondAttribute="trailing" id="kFz-8q-nkh"/>
-                                            <constraint firstAttribute="trailing" secondItem="twr-PV-sYw" secondAttribute="trailing" constant="20" id="kVw-9x-6G6"/>
-                                            <constraint firstItem="yCE-Nx-KLc" firstAttribute="leading" secondItem="J37-3A-uhd" secondAttribute="leading" constant="16" id="m0z-GO-AF0"/>
-                                            <constraint firstAttribute="trailing" secondItem="yCE-Nx-KLc" secondAttribute="trailing" constant="24" id="mlp-e1-SwT"/>
-                                            <constraint firstItem="cc6-6c-9R9" firstAttribute="top" secondItem="twr-PV-sYw" secondAttribute="bottom" constant="8" id="nyx-9O-er2"/>
-                                            <constraint firstItem="kdK-jC-Vab" firstAttribute="leading" secondItem="J37-3A-uhd" secondAttribute="leading" constant="20" id="qxt-3j-Ze1"/>
-                                            <constraint firstAttribute="trailing" secondItem="cc6-6c-9R9" secondAttribute="trailing" constant="20" id="vLB-0D-Ybm"/>
-                                            <constraint firstItem="twr-PV-sYw" firstAttribute="leading" secondItem="J37-3A-uhd" secondAttribute="leading" constant="20" id="vXx-To-1y3"/>
+                                            <constraint firstAttribute="height" constant="1000" id="6kB-Hh-Rbh"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -477,6 +454,7 @@ Please Tap on "Calculate Home Price"</string>
                         <outlet property="homeValueTextField" destination="ewT-1x-AWL" id="FnP-Fk-5nt"/>
                         <outlet property="loanAmountLabel" destination="5mH-OE-H3y" id="4WQ-ve-bOX"/>
                         <outlet property="scrollView" destination="xrc-Ki-BKi" id="cl7-sx-rAb"/>
+                        <outlet property="termTextField" destination="HnY-QX-0dd" id="NN8-Qk-xPB"/>
                         <outlet property="totalLoanTextField" destination="fTN-gF-rSb" id="TCZ-ah-05J"/>
                     </connections>
                 </viewController>
