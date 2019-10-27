@@ -23,7 +23,10 @@ class MortgageCalculationsViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var calculateOutlet: UIButton!
     
-    //MARK: -Below textfield for picker, and its constant/variable:
+    @IBOutlet weak var interestRateTextField: UITextField!
+    
+    
+//MARK: -Below textfield for picker, and its constant/variable:
     @IBOutlet weak var termTextField: UITextField!
     
     let pvPress: [(name: String, numb: Int)] = [("15 Years Fixed", 15), ("30 Years Fixed", 30)]
@@ -78,14 +81,58 @@ class MortgageCalculationsViewController: UIViewController {
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         print("calculate button tapped")
         hideKeyBoard()
-        let homeValue = NSString(string: homeValueTextField.text!).doubleValue
-        let downPayment = NSString(string: downPaymentTextField.text!).doubleValue
-        var totalLoan = NSString(string: totalLoanTextField.text!).doubleValue
-        totalLoan = homeValue - downPayment
-        let monthlyPayment = convertDoubleToCurrency(amount: totalLoan / 360)
-        answerLabel.text = ("You're monthly payment will be \(monthlyPayment) over a course of 30 years")
+        
+        guard let homeValueString = homeValueTextField.text, !homeValueString.isEmpty, let homeValue = Double(homeValueString) else {return}
+        
+        guard let downPaymentString = downPaymentTextField.text, !downPaymentString.isEmpty, let downPayment = Double(downPaymentString) else {return}
+        
+        guard let interestRateString = interestRateTextField.text, !interestRateString.isEmpty, let interestRate = Double(interestRateString) else {return}
+        
+        var startingDown = 0
+        var totalLoan = homeValue - downPayment
+        totalLoanTextField.text = "$\(totalLoan)"
+        
+//        let homeValue = NSString(string: homeValueTextField.text!).doubleValue
+//        let downPayment = NSString(string: downPaymentTextField.text!).doubleValue
+//        var totalLoan = NSString(string: totalLoanTextField.text!).doubleValue
+//        totalLoan.text = homeValue - downPayment
+//        let monthlyPayment = convertDoubleToCurrency(amount: totalLoan / 360)
+//        answerLabel.text = ("You're monthly payment will be \(monthlyPayment) over a course of 30 years")
         
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        print(textField.text)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        guard var homeValueString = homeValueTextField.text else {return false}
+        guard var downPaymentString = downPaymentTextField.text else {return false}
+        
+        switch textField {
+        case homeValueTextField:
+            homeValueString.replacingCharacters(in: Range(range, in: homeValueString)!, with: string)
+        case downPaymentTextField:
+            downPaymentString.replacingCharacters(in: Range(range, in: downPaymentString)!, with: string)
+        default:
+            break
+        }
+        
+        if homeValueString.isEmpty || downPaymentString.isEmpty {
+            totalLoanTextField.text = ""
+            return true
+        }
+        guard let homeValue = Double(homeValueString) else {return false}
+        guard let downPayment = Double(downPaymentString) else {return false}
+        
+        var startingDown = 0
+        var totalLoan = homeValue - downPayment
+        totalLoanTextField.text = "$\(totalLoan)"
+        
+        return true
+    }
+    
     
     func convertCurrenctToDouble(input: String) -> Double? {
         let numberFormatter = NumberFormatter()
