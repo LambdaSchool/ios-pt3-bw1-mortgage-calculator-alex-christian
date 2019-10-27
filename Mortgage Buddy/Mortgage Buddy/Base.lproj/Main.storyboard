@@ -452,6 +452,7 @@ Please Tap on "Calculate Home Price"</string>
                         <outlet property="downPaymentTextField" destination="uQi-sC-dGw" id="Xou-BJ-Hwb"/>
                         <outlet property="homeValueLabel" destination="b0z-Vx-RbX" id="itO-cx-K2u"/>
                         <outlet property="homeValueTextField" destination="ewT-1x-AWL" id="FnP-Fk-5nt"/>
+                        <outlet property="interestRateTextField" destination="3sc-el-4fO" id="hs7-TX-f8w"/>
                         <outlet property="loanAmountLabel" destination="5mH-OE-H3y" id="4WQ-ve-bOX"/>
                         <outlet property="scrollView" destination="xrc-Ki-BKi" id="cl7-sx-rAb"/>
                         <outlet property="termTextField" destination="HnY-QX-0dd" id="NN8-Qk-xPB"/>
