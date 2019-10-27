@@ -9,7 +9,8 @@
 import UIKit
 
 class MortgageCalculationsViewController: UIViewController {
-
+    
+    
     @IBOutlet weak var homeValueTextField: UITextField!
     @IBOutlet weak var downPaymentTextField: UITextField!
     @IBOutlet weak var totalLoanTextField: UITextField!
@@ -22,8 +23,20 @@ class MortgageCalculationsViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var calculateOutlet: UIButton!
     
+    //MARK: -Below textfield for picker, and its constant/variable:
+    @IBOutlet weak var termTextField: UITextField!
+    
+    let pvPress: [(name: String, numb: Int)] = [("15 Years Fixed", 15), ("30 Years Fixed", 30)]
+    
+    var selectedTerm: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        createTermPicker()
+        createToolbar()
+        
+        
         calculateOutlet.layer.cornerRadius = 20
         calculateOutlet.layer.cornerCurve = .continuous
         
@@ -52,15 +65,15 @@ class MortgageCalculationsViewController: UIViewController {
         scrollView.contentInset = scrollViewInsets
         scrollView.scrollIndicatorInsets = scrollViewInsets
     }
-       
+    
     func hideKeyBoard() {
         homeValueTextField.resignFirstResponder()
         downPaymentTextField.resignFirstResponder()
         totalLoanTextField.resignFirstResponder()
         
-    
         
-           
+        
+        
     }
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         print("calculate button tapped")
@@ -78,15 +91,15 @@ class MortgageCalculationsViewController: UIViewController {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .currency
         numberFormatter.locale = Locale.current
-            
+        
         return numberFormatter.number(from: input)?.doubleValue
     }
-        
+    
     func convertDoubleToCurrency(amount: Double) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .currency
         numberFormatter.locale = Locale.current
-            
+        
         return numberFormatter.string(from: NSNumber(value: amount))!
     }
     
@@ -104,4 +117,86 @@ extension MortgageCalculationsViewController: UITextFieldDelegate {
             
             scrollView.scrollRectToVisible(textFieldFrame, animated: true)
     }
+    
+//MARK:     //Function to create the picker:
+    func createTermPicker() {
+        let termPicker = UIPickerView()
+        termPicker.delegate = self
+        
+        termTextField.inputView = termPicker
+        
+        //Customization for picker:
+        termPicker.backgroundColor = .black
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func createToolbar() {
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //Customization for toolbar:
+        toolbar.barTintColor = .black
+        toolbar.tintColor = .white
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(MortgageCalculationsViewController.dismissKeyboard))
+        
+        toolbar.setItems([doneButton], animated: false)
+        toolbar.isUserInteractionEnabled = true
+        
+        termTextField.inputAccessoryView = toolbar
+    }
+    
+    
+    
+}
+
+
+extension MortgageCalculationsViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+   
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pvPress.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pvPress[row].name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        selectedTerm = pvPress[row].name
+        termTextField.text = selectedTerm
+        
+    }
+    
+    //Customization for the text color on picker:
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        
+        var label: UILabel
+        
+        if let view = view as? UILabel {
+            label = view
+        }else {
+            label = UILabel()
+        }
+        
+        label.textColor = .white
+        label.textAlignment = .center
+        label.font = UIFont(name: "Menlo-Regular", size: 17)
+        label.text = pvPress[row].name
+        
+        return label
+    }
+    
+    
 }
