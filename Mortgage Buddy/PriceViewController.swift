@@ -73,6 +73,23 @@ class PriceViewController: UIViewController, UITextFieldDelegate {
         scrollView.scrollIndicatorInsets = scrollViewInsets
     }
     
+    func convertCurrenctToDouble(input: String) -> Double? {
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .currency
+            numberFormatter.locale = Locale.current
+                
+            return numberFormatter.number(from: input)?.doubleValue
+    }
+            
+    func convertDoubleToCurrency(amount: Double) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+            numberFormatter.locale = Locale.current
+                
+        return numberFormatter.string(from: NSNumber(value: amount))!
+    }
+        
+
     
     @IBAction func totalIncomeTimes3(_ sender: UIButton) {
         print("You just tapped me")
@@ -82,8 +99,8 @@ class PriceViewController: UIViewController, UITextFieldDelegate {
         //guard let totalIncome = totalIncomeTextView.text else {return false}
         var startingPrice = 0
         var newTotal = yourIncome + spouseIncome
-        var homeTotal = newTotal * 3
-        affordablePrice.text = "$\(homeTotal)"
+        var homeTotal = convertDoubleToCurrency(amount: newTotal * 3)
+        affordablePrice.text = homeTotal
         
     }
 
@@ -91,7 +108,7 @@ class PriceViewController: UIViewController, UITextFieldDelegate {
      func textFieldDidEndEditing(_ textField: UITextField) {
         print(textField.text)
      
-         }
+    }
          
      
 
@@ -123,10 +140,10 @@ class PriceViewController: UIViewController, UITextFieldDelegate {
     guard let spouseIncome = Double(spouseIncomeString) else {return false}
     //guard let totalIncome = totalIncomeTextView.text else {return false}
     var startingPrice = 0
-    var newTotal = yourIncome + spouseIncome
+    var newTotal = convertDoubleToCurrency(amount: yourIncome + spouseIncome)
 
     // set the label
-    totalIncomeTextView.text = "$\(newTotal)"
+    totalIncomeTextView.text = newTotal
 
 
     return true
