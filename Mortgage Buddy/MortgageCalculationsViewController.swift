@@ -46,6 +46,7 @@ class MortgageCalculationsViewController: UIViewController {
         homeValueTextField.delegate = self
         downPaymentTextField.delegate = self
         totalLoanTextField.delegate = self
+        interestRateTextField.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
@@ -73,6 +74,7 @@ class MortgageCalculationsViewController: UIViewController {
         homeValueTextField.resignFirstResponder()
         downPaymentTextField.resignFirstResponder()
         totalLoanTextField.resignFirstResponder()
+        interestRateTextField.resignFirstResponder()
         
         
         
@@ -90,14 +92,25 @@ class MortgageCalculationsViewController: UIViewController {
         
         var startingDown = 0
         var totalLoan = homeValue - downPayment
-        totalLoanTextField.text = "$\(totalLoan)"
+        let calculateInterest = interestRate / 100 / 1.5 * totalLoan
+        let fifteenInterest = calculateInterest * 15 + totalLoan
+        let thirtyInterest = calculateInterest * 30 + totalLoan
+        let fifteenYearTerm = convertDoubleToCurrency(amount: fifteenInterest / 180)
+        let thirtyYearTerm = convertDoubleToCurrency(amount: thirtyInterest  / 360)
+        if selectedTerm == "15 Years Fixed" {
+            answerLabel.text = ("You're Mortgage Payment will be \(fifteenYearTerm) a month for the next 15 years")
+        }
         
+        if selectedTerm == "30 Years Fixed" {
+            answerLabel.text = ("You're Mortgage Payment will be \(thirtyYearTerm) a month for the next 30 years")
+        }
 //        let homeValue = NSString(string: homeValueTextField.text!).doubleValue
 //        let downPayment = NSString(string: downPaymentTextField.text!).doubleValue
 //        var totalLoan = NSString(string: totalLoanTextField.text!).doubleValue
 //        totalLoan.text = homeValue - downPayment
-//        let monthlyPayment = convertDoubleToCurrency(amount: totalLoan / 360)
-//        answerLabel.text = ("You're monthly payment will be \(monthlyPayment) over a course of 30 years")
+//        let monthlyPayment = convertDoubleToCurrency(amount: totalLoan * calculateInterest * 30 / 360)
+//        answerLabel.text = monthlyPayment
+        
         
     }
     
@@ -112,9 +125,9 @@ class MortgageCalculationsViewController: UIViewController {
         
         switch textField {
         case homeValueTextField:
-            homeValueString.replacingCharacters(in: Range(range, in: homeValueString)!, with: string)
+            homeValueString = homeValueString.replacingCharacters(in: Range(range, in: homeValueString)!, with: string)
         case downPaymentTextField:
-            downPaymentString.replacingCharacters(in: Range(range, in: downPaymentString)!, with: string)
+            downPaymentString = downPaymentString.replacingCharacters(in: Range(range, in: downPaymentString)!, with: string)
         default:
             break
         }
@@ -127,8 +140,8 @@ class MortgageCalculationsViewController: UIViewController {
         guard let downPayment = Double(downPaymentString) else {return false}
         
         var startingDown = 0
-        var totalLoan = homeValue - downPayment
-        totalLoanTextField.text = "$\(totalLoan)"
+        var totalLoan = convertDoubleToCurrency(amount: homeValue - downPayment)
+        totalLoanTextField.text = totalLoan
         
         return true
     }
